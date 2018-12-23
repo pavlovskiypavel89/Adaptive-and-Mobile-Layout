@@ -53,7 +53,7 @@ a {
   /*padding: 0 20px;*/
 }
 
-header {
+.header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ header {
   background: var(--header-bg) url('../images/img/football_767.jpg') no-repeat 50% 35% / 141.5%;
 }
 
-header:after {
+.header:after {
   content: '';
   position: absolute;
   top: 0;
@@ -125,11 +125,14 @@ header:after {
 .application-btns-group {
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 1;
 }
 
 .application-btn {
-  flex-basis: 100%;
+	max-width: 280px;
+	min-width: 145px;
+  width: 100%;
   margin-bottom: 13px;
   border-radius: 24px;
   background-color: var(--main-color);
@@ -195,10 +198,6 @@ header:after {
 }
 
 /* ******************************************** */
-
-main {
-  position: relative;
-}
 
 .athlets-section {
   display: flex;
@@ -350,11 +349,15 @@ main {
   padding-bottom: 68px;
 }
 
+.actions-section .section-item__preview {
+	line-height: 0;
+}
+
 .actions-section .section-item__img {
   max-width: 100%;
 }
 
-.actions-section .section-item__img ~ * {
+.actions-section .section-item__preview ~ * {
   padding-left: 20px;
   padding-right: 22px;
 }
@@ -402,7 +405,7 @@ main {
 
 /* ******************************************** */
 
-footer {
+.footer {
  position: relative;
  display: flex;
  flex-direction: column;
@@ -412,7 +415,7 @@ footer {
   background: var(--footer-bg) url(../images/img/game_767.jpg) no-repeat 100% 40% / 141.5%;
 }
 
-footer:after {
+.footer:after {
   content: '';
   position: absolute;
   top: 0;
@@ -429,7 +432,7 @@ footer:after {
 	fill: white;
 }
 
-footer > .logo-btn-with-text {
+.footer > .logo-btn-with-text {
   margin-top: auto;
   margin-bottom: 0;
 }
@@ -454,7 +457,7 @@ footer > .logo-btn-with-text {
   color: white;
 }
 
-footer > .logo-btn {
+.footer > .logo-btn {
   align-self: center;
   margin: 0 auto 49px;
   line-height: 0;
