@@ -369,7 +369,10 @@ main {
   position: absolute;
   top: -86px;
   left: 22px;
-	padding: 33px 27px 37px;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+	padding: 33px 0 37px;
   line-height: 0;
   color: var(--light-for-colored-li);
   background-color: var(--main-color);
