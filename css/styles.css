@@ -1,0 +1,459 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+	  url('../fonts/OpenSans-Regular.woff') format('woff'),
+	  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+	  url('../fonts/OpenSans-Bold.woff') format('woff'),
+	  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+
+/* Custom Properties */
+:root {
+	--main-color: #5e42b0;
+	--darkened-main-color: #090c35;
+	--lightened-main-color: #8765dd;
+	--blurred-main-color: #9b8ec1;
+	--bottom-color-gradient: #50329c;
+	--top-color-gradient: #7751db;
+	--header-bg: #aa4c32;
+	--footer-bg: #f2f2f2;
+	--grey-for-whited-bg: #e7e7e7; 
+	--grey-for-colored-bg: #c1c1c1; 
+	--light-for-primary-bg: #fafafa; 
+	--light-for-secondary-bg: #f5f4f9; 
+	--light-for-colored-li: #f5f6f7; 
+	--shadow: rgba(0, 0, 0, 0.6);
+	--breakpoint-mobile: 640px;
+	--breakpoint-tablet: 960px;
+	--breakpoint-desktop: 1920px;
+	--main-font: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Styles */
+a {
+  font: normal 1rem/normal var(--main-font);	
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+  /*padding: 0 20px;*/
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 568px;
+  /*margin: 0 -20px;*/
+  padding: 33px 20px 66px;
+  background: var(--header-bg) url('../images/img/football_767.jpg') no-repeat 50% 35% / 141.5%;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkened-main-color);
+  opacity: 0.9;
+}
+
+.logo-btn {
+	padding: 12px 6px 13px;
+	border-radius: 12px;
+	background: linear-gradient(to top, var(--bottom-color-gradient), var(--top-color-gradient));
+}
+
+.logo-btn-with-text {
+  align-self: center;
+  margin-bottom: 130px;
+  line-height: 0;
+  z-index: 1;
+}
+
+.logo-btn:hover,
+.logo-btn-with-text:hover {
+	opacity: 0.9;
+}
+
+.logo-btn:active {
+	box-shadow: inset 7px 7px 17px -7px var(--shadow);
+}
+
+.logo-btn-with-text:active > .surface-logo-icon-with-text {
+	width: 130px;
+}
+
+.surface-logo-icon-with-text {
+  width: 134px;
+  min-height: 36px;
+  fill: white;
+}
+
+.header-offer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+  font: bold 2.8rem/1.2 var(--main-font);
+  text-transform: uppercase; 
+  letter-spacing: 1.2px;
+  color: white;
+  z-index: 1;
+}
+
+.header-offer-cta {
+  margin-top: 18px;
+  margin-left: 45px;
+}
+
+.application-btns-group {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.application-btn {
+  flex-basis: 100%;
+  margin-bottom: 13px;
+  border-radius: 24px;
+  background-color: var(--main-color);
+  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.application-btn-link {
+  display: block; 
+  padding: 7px 0;
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.application-btn:hover {
+  background-color: white;
+}
+
+.application-btn:hover .application-btn-link {
+  color: var(--main-color);
+}
+
+.application-btn:hover .appstore-icon, 
+.application-btn:hover .googleplay-icon {
+  fill: var(--main-color);
+}
+
+.application-btn:active {
+  box-shadow: inset 7px 7px 17px -7px var(--shadow);
+}
+
+.application-btn-content {
+  display: flex;
+  align-items: center;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.appstore-icon, 
+.googleplay-icon {
+  width: 24px; 
+  margin-right: 7px;
+  fill: white;
+}
+
+.appstore-icon {
+  margin-top: -7px;
+}
+
+.googleplay-icon {
+  margin-top: -3px;
+}
+
+.application-btn-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-btn-brand {
+  font-weight: bold;
+}
+
+/* ******************************************** */
+
+main {
+  position: relative;
+}
+
+.athlets-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title-wrapper {
+  position: relative;
+  padding: 17px 0 238px;
+}
+
+.athlets-section .section-title-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 11px;
+  right: 0;
+  bottom: -55px;
+  background: url('../images/img/footballer_192.png') no-repeat center / contain;
+}
+
+.section-title {
+  margin-left: 22px;
+  font: bold 5rem/1 var(--main-font);
+  text-transform: uppercase;
+  color: var(--grey-for-whited-bg);
+}
+
+.section-item {
+  padding: 55px 22px 53px 20px;
+  counter-increment: item;
+}
+
+.athlets-section .section-item:first-child,
+.players-section .section-item:first-child {
+  background-color: var(--light-for-primary-bg);
+}
+
+.athlets-section .section-item:first-child {
+  padding-top: 80px; 
+}
+
+.athlets-section .section-item:nth-child(2),
+.players-section .section-item:nth-child(2) {
+  background-color: var(--light-for-secondary-bg);
+}
+
+.athlets-section .section-item:nth-child(3) {
+  background-color: var(--main-color);
+}
+
+.athlets-section .section-item:nth-child(3) .section-item__title:after,
+.players-section .section-item:nth-child(3) .section-item__title:after  {
+  border-color: white;
+}
+
+.athlets-section .section-item:nth-child(3) .section-item__text,
+.players-section .section-item:nth-child(3) .section-item__text  {
+  color: white;
+}
+
+.section-item__title {
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font: bold 2.2rem/1.2 var(--main-font);
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  color: var(--grey-for-colored-bg);  
+}
+
+.section-item__title:before {
+  content: counter(item, decimal-leading-zero) " ";
+  position: absolute;
+  left: -25px;
+  font-size: 1.4rem;
+  line-height: 1.26666;
+  letter-spacing: 0;
+  color: black;
+}
+
+.section-item__title:after {
+  content: '';
+  position: absolute;
+  left: -25px;
+  bottom: 4px;
+  width: 13px;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+}
+
+.section-item__text {
+  font: normal 1.5rem/1.25 var(--main-font);
+  letter-spacing: 0.85px;
+  word-spacing: -1px;
+}
+
+/* ******************************************** */
+
+.players-section .section-title-wrapper {
+	padding-top: 15px;
+	padding-bottom: 240px;
+}
+
+.players-section .section-title-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 9px;
+  right: 0;
+  bottom: -23px;
+  background: url('../images/img/basketballer_302.png') no-repeat left top / contain;
+}
+
+.players-section .section-title {
+	margin-left: 17px;
+}
+
+.players-section .section-item {
+  padding-bottom: 54px;
+}
+
+.players-section .section-item:first-child {
+  padding-top: 78px; 
+}
+
+.players-section .section-item:nth-child(3) {
+  background-color: var(--darkened-main-color);
+}
+
+.players-section .section-item:nth-child(3) .section-item__title:before  {
+  color: var(--lightened-main-color);
+}
+
+/* ******************************************** */
+
+/*.action-section .section-list {
+  display: flex;
+}*/
+
+.actions-section .section-item {
+	display: flex;
+	flex-direction: column;
+  padding: 0 0 78px;
+}
+
+.actions-section .section-item:last-child {
+  padding-bottom: 68px;
+}
+
+.actions-section .section-item__img {
+  max-width: 100%;
+}
+
+.actions-section .section-item__img ~ * {
+  padding-left: 20px;
+  padding-right: 22px;
+}
+
+.actions-section .section-item__title {
+	font-size: 2.8rem;
+	margin: 28px 0 16px -2px;
+  color: var(--grey-for-whited-bg);
+}
+
+.actions-section .section-item__title:before {
+  position: absolute;
+  top: -86px;
+  left: 22px;
+	padding: 33px 27px 37px;
+  line-height: 0;
+  color: var(--light-for-colored-li);
+  background-color: var(--main-color);
+}
+
+.actions-section .section-item__title:after {
+  left: 48px;
+  bottom: 72px;
+  background: white;
+	border-color: white; 
+  opacity: 0.3;
+}
+
+.actions-section .section-item__text {
+	font-size: 1.6rem;
+	letter-spacing: 0.9px;
+}
+
+.actions-section .section-item.be__active > .section-item__title {
+	margin-top: 27px;
+	margin-bottom: 14px;
+}
+
+.actions-section .section-item.be__active > .section-item__text {
+	padding-right: 40px;
+}
+
+/* ******************************************** */
+
+footer {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+  min-height: 568px;
+  /* margin: 0 -20px; */
+  padding: 100px 20px 10px;
+  background: var(--footer-bg) url(../images/img/game_767.jpg) no-repeat 100% 40% / 141.5%;
+}
+
+footer:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkened-main-color);
+  opacity: 0.9;
+}
+
+.surface-logo-icon {
+	width: 58px;
+	height: 47px;
+	fill: white;
+}
+
+footer > .logo-btn-with-text {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.footer-offer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 73px;
+  font: normal 1.4rem/normal var(--main-font);
+  letter-spacing: 1px;
+  word-spacing: -1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--blurred-main-color);
+  z-index: 1;
+}
+
+.footer-offer-cta {
+  font-weight: bold;
+  font-size: 3.2rem;
+  word-spacing: 2px;
+  color: white;
+}
+
+footer > .logo-btn {
+  align-self: center;
+  margin: 0 auto 49px;
+  line-height: 0;
+  z-index: 1;
+}
