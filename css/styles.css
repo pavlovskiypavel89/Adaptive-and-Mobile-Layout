@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   min-height: 568px;
   /*margin: 0 -20px;*/
-  padding: 33px 20px 66px;
+  padding: 33px 20px;
   background: var(--header-bg) url('../images/img/football_767.jpg') no-repeat 50% 35% / 141.5%;
 }
 
@@ -82,8 +82,9 @@ body {
 }
 
 .logo-btn-with-text {
+  width: 47.8571%;
   align-self: center;
-  margin-bottom: 130px;
+  margin-bottom: auto;
   line-height: 0;
   z-index: 1;
 }
@@ -97,19 +98,19 @@ body {
   box-shadow: inset 7px 7px 17px -7px var(--shadow);
 }
 
-.logo-btn-with-text:active > .surface-logo-icon-with-text {
-  width: 130px;
+.logo-btn-with-text:active {
+  width: 46.428571%;
 }
 
 .surface-logo-icon-with-text {
-  width: 134px;
-  min-height: 36px;
+  max-width: 100%;
   fill: white;
 }
 
 .header-offer {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
   margin-bottom: 84px;
   font: bold 2.8rem/1.2 var(--main-font);
   text-transform: uppercase; 
@@ -128,6 +129,10 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: 1;
+}
+
+.header .application-btns-group {
+  margin-bottom: 37px;
 }
 
 .application-btn {
