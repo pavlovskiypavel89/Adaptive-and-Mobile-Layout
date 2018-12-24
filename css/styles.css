@@ -41,7 +41,8 @@ font-display: swap;
 }
 
 /* Styles */
-a {
+body {
+  position: relative;
   font: normal 1rem/normal var(--main-font);	
 }
 
