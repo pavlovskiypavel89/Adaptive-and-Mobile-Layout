@@ -1,15 +1,19 @@
 @font-face {
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   src: url('../fonts/opensans.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   src: url('../fonts/opensansbold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -23,20 +27,11 @@ html, body {
   border: 0;
 }
 
-/* .header__slogan {
-  margin: auto;
-} */
-
 .header__logo-text {
   width: 15rem;
 }
 
-
-
-button,
-h1,
-h2,
-h3 {
+button, h1, h2, h3 {
   text-transform: uppercase;
 }
 
@@ -46,13 +41,12 @@ button {
 
 button:hover {
   cursor: pointer;
-  
 }
 
-header,
-section,
-footer {
-  border: 2px solid blue;
+header, section, footer {
+  border: 2px solid blue; /* temporary */
+  position: relative;
+  min-height: 100vh;
 }
 
 h1 {
@@ -60,17 +54,11 @@ h1 {
 }
 
 header {
-  position: relative;
-  min-height: 100vh;
-  background:  linear-gradient(
-    rgba(10, 14, 52, 0.9),
-    rgba(10, 14, 52, 0.9)
-  ), url(../sources/img/football_767.jpg);
+  background: linear-gradient( rgba(10, 14, 52, 0.9), rgba(10, 14, 52, 0.9)), url(../sources/img/football_767.jpg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
   color: white;
-
 }
 
 svg g {
@@ -86,6 +74,10 @@ svg g {
   height: 36px;
 }
 
+.header__slogan {
+  position: relative;
+  margin: auto;
+}
 
 .header__buttons button {
   position: absolute;
@@ -111,12 +103,9 @@ svg g {
   left: calc(50% - 14rem);
 }
 
-
 .reasons {
   border: 1px dashed grey;
 }
-
-
 
 .header__slogan__first {
   position: absolute;
@@ -134,21 +123,18 @@ svg g {
   font-size: 2.8rem;
 }
 
-.header__buttons__ios .logo,
-.header__buttons__android .logo {
+.header__buttons__ios .logo, .header__buttons__android .logo {
   text-align: right;
   width: 40%;
 }
 
-.header__buttons__apple__logo,
-.header__buttons__gplay__logo {
+.header__buttons__apple__logo, .header__buttons__gplay__logo {
   width: 20px;
   height: 24px;
   margin-right: 0.9rem;
 }
 
-.header__buttons__ios__text,
-.header__buttons__android__text {
+.header__buttons__ios__text, .header__buttons__android__text {
   font-size: 0.8pt;
   height: 100%;
   width: 60%;
@@ -160,7 +146,6 @@ svg g {
   align-items: flex-start;
 }
 
-.header__buttons__ios__text .store,
-.header__buttons__android__text .store {
+.header__buttons__ios__text .store, .header__buttons__android__text .store {
   font-weight: bold;
 }
