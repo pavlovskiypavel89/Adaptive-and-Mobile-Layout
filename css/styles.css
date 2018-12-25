@@ -475,3 +475,75 @@ body {
   line-height: 0;
   z-index: 1;
 }
+
+/* **** Tablets **** */
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .header {
+    min-height: calc(100vh - 8px);
+    padding: 38px;
+    background: var(--header-bg) url(../images/img/football_767.jpg) no-repeat 0% 35% / cover;
+  }
+
+  .logo-btn-with-text {
+    width: 29.8571%;
+    margin-bottom: 0;
+  }
+
+  .header-offer {
+    padding-left: 49px;
+    margin-bottom: auto;
+    margin-top: 167px;
+    font-size: 6.4rem;
+    letter-spacing: 3.2px;
+  }
+
+  .header-offer-cta {
+    padding-top: 2px;
+    padding-left: 105px;
+  }
+
+  .header .application-btns-group {
+    margin-bottom: 53px;
+    flex-direction: row;
+  }
+
+  .application-btn {
+    max-width: 390px;
+    min-width: 175px;
+    width: 50%;
+    margin: 0 2% 0 3%;
+    border-radius: 38px;
+    background-color: var(--main-color);
+    transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  }
+  
+  .application-btn-link {
+    padding: 20px 0 18px;
+    font-size: 1.5rem;
+  }
+
+  .appstore-icon, .googleplay-icon {
+    width: 45px;
+    margin-left: -1px;
+    margin-right: 22px;
+  }
+
+  .googleplay-icon {
+     margin: -3px 25px -2px 16px;
+  }
+
+  .application-btn-content {
+    max-width: 234px;
+  }
+
+  .application-btn-cta {
+    line-height: 1.15;
+    letter-spacing: -0.15px;
+  }
+  
+  .application-btn__googleplay .application-btn-cta {
+    margin-top: -4px;
+  }
+
+}
