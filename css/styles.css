@@ -440,6 +440,7 @@ body {
 .surface-logo-icon {
   width: 58px;
   height: 47px;
+  transform: scale(1.1, 1);
   fill: white;
 }
 
