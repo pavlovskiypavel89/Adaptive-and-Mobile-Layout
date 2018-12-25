@@ -229,8 +229,8 @@ body {
 }
 
 .section-title {
-  margin-left: 22px;
   padding-top: 17px;
+  padding-left: 22px;
   font: bold 5rem/1 var(--main-font);
   text-transform: uppercase;
   color: var(--grey-for-whited-bg);
@@ -324,8 +324,8 @@ body {
 }
 
 .players-section .section-title {
-  margin-left: 17px;
   padding-top: 15px;
+  padding-left: 17px;
 }
 
 .players-section .section-item {
