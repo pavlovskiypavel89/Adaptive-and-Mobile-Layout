@@ -87,7 +87,6 @@ body {
   align-self: center;
   margin-bottom: auto;
   line-height: 0;
-  transform: scale(1);
   transition: transform 0.3s;
   z-index: 1;
 }
@@ -145,7 +144,7 @@ body {
   margin-bottom: 13px;
   border-radius: 24px;
   background-color: var(--main-color);
-  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, transform 0.3s;
 }
 
 .application-btn-link {
@@ -173,6 +172,7 @@ body {
 
 .application-btn:active {
   box-shadow: inset 7px 7px 17px -7px var(--shadow);
+  transform: scale(0.95);
 }
 
 .application-btn-content {
