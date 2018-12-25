@@ -82,7 +82,8 @@ body {
 }
 
 .logo-btn-with-text {
-  max-width: 210px;
+  max-width: 166px;
+  min-width: 112px;
   width: 47.8571%;
   align-self: center;
   margin-bottom: auto;
@@ -486,6 +487,7 @@ body {
   }
 
   .logo-btn-with-text {
+    max-width: 210px;
     width: 29.8571%;
     margin-bottom: 0;
   }
