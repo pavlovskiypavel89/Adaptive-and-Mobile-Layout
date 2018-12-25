@@ -514,8 +514,6 @@ body {
     width: 50%;
     margin: 0 2% 0 3%;
     border-radius: 38px;
-    background-color: var(--main-color);
-    transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
   }
   
   .application-btn-link {
