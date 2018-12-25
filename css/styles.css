@@ -213,12 +213,12 @@ body {
   flex-direction: column;
 }
 
-.section-preview {
+.section-background__preview {
   position: relative;
   padding-top: 238px;
 }
 
-.athlets-section .section-preview:after {
+.athlets-section .section-background__preview:after {
   content: '';
   position: absolute;
   top: 13px;
@@ -308,12 +308,12 @@ body {
 
 /* ******************************************** */
 
-.players-section .section-preview {
+.players-section .section-background__preview {
   position: relative;
   padding-top: 240px;
 }
 
-.players-section .section-preview:after {
+.players-section .section-background__preview:after {
   content: '';
   position: absolute;
   top: 16px;
