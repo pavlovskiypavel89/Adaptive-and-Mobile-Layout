@@ -17,21 +17,36 @@ html {
   font-size: 62.5%;
 }
 
-.header__logo-text {
-  width: 15rem;
-}
-
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+/* .header__slogan {
+  margin: auto;
+} */
+
+.header__logo-text {
+  width: 15rem;
+}
+
+
+
 button,
 h1,
 h2,
 h3 {
   text-transform: uppercase;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  
 }
 
 header,
@@ -46,8 +61,6 @@ h1 {
 
 header {
   position: relative;
-  /* width: 320px;
-  height: 568px; */
   min-height: 100vh;
   background:  linear-gradient(
     rgba(10, 14, 52, 0.9),
@@ -76,6 +89,9 @@ svg g {
 
 .header__buttons button {
   position: absolute;
+  display: flex;
+  margin: 0;
+  padding: 0;
   width: 28rem;
   height: 3.5rem;
   font-size: 0.8rem;
@@ -88,15 +104,6 @@ svg g {
 .header__buttons__ios {
   top: calc(40rem - 1.75rem);
   left: calc(50% - 14rem);
-  background: url("../sources/svg/apple-logo.svg") no-repeat 8.2rem;
-  background-size: 2rem 2.4rem;
-}
-
-.header__buttons__ios > div {
-
-  text-align: left;
-  position: relative;
-  margin-left: calc(11.2rem);
 }
 
 .header__buttons__android {
@@ -109,7 +116,7 @@ svg g {
   border: 1px dashed grey;
 }
 
-.header-slogan__first {
+.header__slogan__first {
   position: absolute;
   top: calc(20.5rem - 1.5rem);
   left: 2rem;
@@ -117,7 +124,7 @@ svg g {
   font-size: 3rem;
 }
 
-.header-slogan__second {
+.header__slogan__second {
   position: absolute;
   top: calc(25.6rem - 1.4rem);
   left: 6.4rem;
@@ -125,4 +132,33 @@ svg g {
   font-size: 2.8rem;
 }
 
+.header__buttons__ios .logo,
+.header__buttons__android .logo {
+  text-align: right;
+  width: 40%;
+}
 
+.header__buttons__apple__logo,
+.header__buttons__gplay__logo {
+  width: 20px;
+  height: 24px;
+  margin-right: 0.9rem;
+}
+
+.header__buttons__ios__text,
+.header__buttons__android__text {
+  font-size: 0.8pt;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.header__buttons__ios__text .store,
+.header__buttons__android__text .store {
+  font-weight: bold;
+}
