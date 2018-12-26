@@ -91,7 +91,7 @@ header .child4 {
   align-items: flex-end;
 }
 
-header button {
+header .button {
   padding: 0;
   border: 0;
   outline: none;
@@ -100,12 +100,12 @@ header button {
   border: none;
   border-radius: 17.5px;
 }
-header button:hover {
+header .button:hover {
   cursor: pointer;
 }
 
 
-header .child4 button {
+header .child4 .button {
   width: 280px;
   height: 35px;
   display: flex;
@@ -113,7 +113,7 @@ header .child4 button {
   font-size: 8px;
 }
 
-header .child4 button .logo {
+header .child4 .button .logo {
   width: 40%;
   display: flex;
   justify-content: flex-end;
@@ -132,7 +132,7 @@ header .child5 {
 }
 
 
-header .child5 button {
+header .child5 .button {
   width: 280px;
   height: 35px;
   display: flex;
@@ -140,14 +140,14 @@ header .child5 button {
   font-size: 8px;
 }
 
-header .child5 button .logo {
+header .child5 .button .logo {
   width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-header button .store {
+header .button .store {
   font-weight: bold;
 }
 
