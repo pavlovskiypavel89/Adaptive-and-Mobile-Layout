@@ -76,7 +76,7 @@ header .slogan1 {
 header .child3 {
   height: 84px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 header .slogan2 {
