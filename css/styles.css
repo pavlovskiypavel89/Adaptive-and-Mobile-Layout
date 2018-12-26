@@ -170,25 +170,50 @@ header .cta, header .store {
   min-height: calc(1577px - 568px);
 }
 
+.section1 .content-flex {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(320px - 55px);
+}
+.section1 .heading {
+  padding-left: 8px;
+}
+.section1 .text {
+  padding-top: 15px;
+}
+
+.section1 .child3 .content-flex {
+  padding-top: 74px;
+}
+
+.section1 .number {
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 4px solid rgb(94, 66, 176);
+  width: 16px;
+}
+
+.section1 .heading {
+  font-size: 23px;
+  color: rgb(193, 193, 193);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section1 .text {
+  font-size: 15px;
+  color: black;
+  text-align: left;
+}
+
 .section1 .child1 {
   position: relative;
   height: 60px;
   display: flex;
   align-items: flex-end;
-}
-
-h2 {
-  position: absolute;
-  top: 4px;
-  margin: 0;
-  padding: 0;
-}
-
-.section1 .child1 h2 {
-  padding: 0 0 0 20px;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: rgb(231, 231, 231)
 }
 
 .section1 .child2 {
@@ -206,20 +231,31 @@ h2 {
   height: 213px;
 }
 
+
+
+
+
 .section1 .child4 {
   height: 262px;
   background: rgb(245, 244, 249);
 }
+
+
 
 .section1 .child5 {
   height: 228px;
   background: rgb(94, 66, 176)
 }
 
+
+.section1 .child5 .number {
+  border-bottom-color: white;
+}
+
+
 .section1 .child5 .text {
   color: rgb(193, 193, 193);
 }
-
 
 .section1 .heading {
   text-transform: uppercase;
