@@ -213,10 +213,6 @@ header .cta, header .store {
 
 /* section 1 - athletes  */
 
-.section1 {
-  min-height: calc(1010px);
-}
-
 .section1 .child1 {
   position: relative;
   height: 60px;
@@ -263,10 +259,6 @@ header .cta, header .store {
 }
 
 /* section 2 - players  */
-
-.section2 {
-  min-height: calc(1010px);
-}
 
 .section2 .child1 {
   position: relative;
