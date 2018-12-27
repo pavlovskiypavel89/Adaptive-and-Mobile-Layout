@@ -15,7 +15,7 @@
   src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
        url('../fonts/OpenSans-Bold.woff') format('woff'),
        url('../fonts/OpenSans-Bold.ttf') format('truetype');
-font-display: swap;
+  font-display: swap;
 }
 
 /* Custom Properties */
@@ -34,34 +34,48 @@ font-display: swap;
   --light-for-secondary-bg: #f5f4f9; 
   --light-for-colored-li: #f5f6f7; 
   --shadow: rgba(0, 0, 0, 0.6);
-  --breakpoint-mobile: 640px;
-  --breakpoint-tablet: 960px;
-  --breakpoint-desktop: 1920px;
   --main-font: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-/* Styles */
+/* *************** STYLES *************** */ 
+
 body {
   position: relative;
-  font: normal 1rem/normal var(--main-font);	
+  font: normal 1rem/normal 'Open Sans', Helvetica, Arial, sans-serif;	
+}
+
+main {
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  text-transform: uppercase;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   max-width: 1920px;
+  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
-  /*padding: 0 20px;*/
+  overflow: hidden;
 }
+
+/* *************** Mobile first *************** */ 
+
+/* *************** Header *************** */ 
 
 .header {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* ???? */
   min-height: 568px;
-  /*margin: 0 -20px;*/
   padding: 33px 20px;
-  background: var(--header-bg) url('../images/img/football_767.jpg') no-repeat 50% 35% / 141.5%;
+  background: #aa4c32 url('../images/img/football_767.jpg') no-repeat center 35% / 141.5%;
+  color: white;
 }
 
 .header:after {
@@ -71,24 +85,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--darkened-main-color);
+  background-color: #090c35;
   opacity: 0.9;
 }
 
-.logo-btn {
-  padding: 12px 6px 13px;
-  border-radius: 12px;
-  background: linear-gradient(to top, var(--bottom-color-gradient), var(--top-color-gradient));
-}
-
 .logo-btn-with-text {
+  position: relative;
+  display: block;
   max-width: 166px;
   min-width: 112px;
   width: 47.8571%;
-  align-self: center;
-  margin-bottom: auto;
+  margin: 0 auto 130px;
   line-height: 0;
+  transform: scale(1);
   transition: transform 0.3s;
+  z-index: 1;
+}
+
+.logo-btn {
+  position: relative;
+  display: block;
+  max-width: 100px;
+  min-width: 72px;
+  width: 22.85%;
+  margin: 0 auto;
+  padding: 3.6% 2.6%;  
+  border-radius: 20% ;
+  background: linear-gradient(to top, #50329c, #7751db);
   z-index: 1;
 }
 
@@ -97,12 +120,12 @@ body {
   opacity: 0.9;
 }
 
-.logo-btn:active {
-  box-shadow: inset 7px 7px 17px -7px var(--shadow);
-}
-
 .logo-btn-with-text:active {
   transform: scale(0.9);
+}
+
+.logo-btn:active {
+  box-shadow: inset 8px 8px 18px -6px rgba(0, 0, 0, 0.6);
 }
 
 .surface-logo-icon-with-text {
@@ -111,14 +134,13 @@ body {
 }
 
 .header-offer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
   margin-bottom: 84px;
-  font: bold 2.8rem/1.2 var(--main-font);
-  text-transform: uppercase; 
-  letter-spacing: 1.2px;
-  color: white;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.12rem;
   z-index: 1;
 }
 
@@ -128,6 +150,7 @@ body {
 }
 
 .application-btns-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,56 +165,32 @@ body {
   max-width: 280px;
   min-width: 145px;
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   border-radius: 24px;
-  background-color: var(--main-color);
-  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, transform 0.3s;
+  background-color: #5e42b0;
+  transition: transform 0.3s, background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
 .application-btn-link {
-  display: block; 
-  padding: 7px 0;
-  font-size: 0.85rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  user-select: none;
-}
-
-.application-btn:hover {
-  background-color: white;
-}
-
-.application-btn:hover .application-btn-link {
-  color: var(--main-color);
-}
-
-.application-btn:hover .appstore-icon, 
-.application-btn:hover .googleplay-icon {
-  fill: var(--main-color);
-}
-
-.application-btn:active {
-  box-shadow: inset 7px 7px 17px -7px var(--shadow);
-  transform: scale(0.95);
-}
-
-.application-btn-content {
   display: flex;
-  align-items: center;
-  max-width: 120px;
-  margin: 0 auto;
+  align-items: center; 
+  padding: 7px 0 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  user-select: none;
+  color: white;
 }
 
 .appstore-icon, 
 .googleplay-icon {
-  width: 24px; 
+  width: 24px;
   margin-right: 7px;
+  margin-left: 80px; 
   fill: white;
 }
 
 .appstore-icon {
-  margin-top: -7px;
+  margin-top: -6px;
 }
 
 .googleplay-icon {
@@ -207,83 +206,55 @@ body {
   font-weight: bold;
 }
 
-/* ******************************************** */
-
-.athlets-section {
-  display: flex;
-  flex-direction: column;
+.application-btn:hover {
+  background-color: white;
 }
 
-.section-background__preview {
+.application-btn:hover .application-btn-link {
+  color: #5e42b0;
+}
+
+.application-btn:hover .appstore-icon, 
+.application-btn:hover .googleplay-icon {
+  fill: #5e42b0;
+}
+
+.application-btn:active {
+  box-shadow: inset 7px 7px 15px -7px rgba(0, 0, 0, 0.6);
+  transform: scale(0.95);
+}
+
+/* *************** Common sections *************** */
+
+.section-list.with-background-preview {
   position: relative;
-  padding-top: 238px;
-}
-
-.athlets-section .section-background__preview:after {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 11px;
-  right: 0;
-  bottom: -55px;
-  background: url('../images/img/footballer_192.png') no-repeat center / contain;
 }
 
 .section-title {
-  padding-top: 17px;
-  padding-left: 22px;
-  font: bold 5rem/1 var(--main-font);
-  text-transform: uppercase;
-  color: var(--grey-for-whited-bg);
+  font-size: 5rem;
+  line-height: 1;
+  color: #e7e7e7;
 }
 
 .section-item {
-  padding: 55px 22px 53px 20px;
+  padding: 55px 20.5px 53px 20px;
   counter-increment: item;
-}
-
-.athlets-section .section-item:first-child,
-.players-section .section-item:first-child {
-  background-color: var(--light-for-primary-bg);
-}
-
-.athlets-section .section-item:first-child {
-  padding-top: 80px; 
-}
-
-.athlets-section .section-item:nth-child(2),
-.players-section .section-item:nth-child(2) {
-  background-color: var(--light-for-secondary-bg);
-}
-
-.athlets-section .section-item:nth-child(3) {
-  background-color: var(--main-color);
-}
-
-.athlets-section .section-item:nth-child(3) .section-item__title:after,
-.players-section .section-item:nth-child(3) .section-item__title:after  {
-  border-color: white;
-}
-
-.athlets-section .section-item:nth-child(3) .section-item__text,
-.players-section .section-item:nth-child(3) .section-item__text  {
-  color: white;
 }
 
 .section-item__title {
   position: relative;
-  margin-left: 25px;
-  margin-bottom: 20px;
-  font: bold 2.2rem/1.2 var(--main-font);
-  text-transform: uppercase;
-  letter-spacing: 1.7px;
-  color: var(--grey-for-colored-bg);  
+  padding-left: 25px;
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.17rem;
+  color: #c1c1c1;  
 }
 
 .section-item__title:before {
   content: counter(item, decimal-leading-zero) " ";
   position: absolute;
-  left: -25px;
+  left: 0;
   font-size: 1.4rem;
   line-height: 1.26666;
   letter-spacing: 0;
@@ -293,40 +264,81 @@ body {
 .section-item__title:after {
   content: '';
   position: absolute;
-  left: -25px;
-  bottom: 4px;
+  left: 0;
+  bottom: 24px;
   width: 13px;
-  background-color: var(--main-color);
-  border: 2px solid var(--main-color);
+  border: 2px solid #5e42b0;
   border-radius: 2px;
+  background-color: #5e42b0;
 }
 
 .section-item__text {
-  font: normal 1.5rem/1.25 var(--main-font);
-  letter-spacing: 0.85px;
-  word-spacing: -1px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: 0.09rem;
+  word-spacing: -0.1rem;
 }
 
-/* ******************************************** */
+/* *************** Athleths & Players section *************** */
 
-.players-section .section-background__preview {
-  position: relative;
-  padding-top: 240px;
+.athlets-section .section-item:first-child,
+.players-section .section-item:first-child {
+  background-color: #fafafa;
 }
 
-.players-section .section-background__preview:after {
+.athlets-section .section-item:nth-child(2),
+.players-section .section-item:nth-child(2) {
+  background-color: #f5f4f9;
+}
+
+.athlets-section .section-item.with-important-info .section-item__title:after,
+.players-section .section-item.with-important-info .section-item__title:after {
+  border-color: white;
+}
+
+.athlets-section .section-item.with-important-info .section-item__text,
+.players-section .section-item.with-important-info .section-item__text {
+  color: white;
+}
+
+/* *************** Athleths section only *************** */
+
+.athlets-section .section-title {
+  padding: 17px 0 238px 22px;
+}
+
+.athlets-section .section-list.with-background-preview:after {
   content: '';
   position: absolute;
-  top: 16px;
-  left: 0;
+  top: -225px;
+  left: 12px;
   right: 0;
-  bottom: -23px;
-  background: url('../images/img/basketballer_302.png') no-repeat center top / contain;
+  bottom: 92%;
+  background: url('../images/img/footballer_192.png') no-repeat center / contain;
 }
 
+.athlets-section .section-item:first-child {
+  padding-top: 80px;
+}
+
+.athlets-section .section-item.with-important-info {
+  background-color: #5e42b0;
+}
+
+/* *************** Players section only *************** */
+
 .players-section .section-title {
-  padding-top: 15px;
-  padding-left: 17px;
+  padding: 15px 0 240px 17px; 
+}
+
+.players-section .section-list.with-background-preview:after {
+  content: '';
+  position: absolute;
+  top: -224px;
+  left: 0;
+  right: 0;
+  bottom: 96%;
+  background: url('../images/img/basketballer_302.png') no-repeat center top / contain;
 }
 
 .players-section .section-item {
@@ -337,36 +349,22 @@ body {
   padding-top: 78px; 
 }
 
-.players-section .section-item:nth-child(3) {
-  background-color: var(--darkened-main-color);
+.players-section .section-item.with-important-info {
+  background-color: #090c35;
 }
 
-.players-section .section-item:nth-child(3) .section-item__title:before  {
-  color: var(--lightened-main-color);
+.players-section .section-item.with-important-info .section-item__title:before {
+  color: #8765dd;
 }
 
-/* ******************************************** */
-
-/*.action-section .section-list {
-  display: flex;
-}*/
+/* *************** Actions section *************** */
 
 .actions-section .section-item {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 78px;
+  padding: 0 0 77px;
 }
 
-.actions-section .section-item:last-child {
-  padding-bottom: 68px;
-}
-
-.actions-section .section-item__preview {
-  line-height: 0;
-}
-
-.actions-section .section-item__img {
-  max-width: 100%;
+.actions-section .section-item.work__it {
+  padding-bottom: 67px;
 }
 
 .actions-section .section-item__preview ~ * {
@@ -374,10 +372,15 @@ body {
   padding-right: 22px;
 }
 
+.actions-section .section-item__img {
+  max-width: 100%;
+}
+
 .actions-section .section-item__title {
   font-size: 2.8rem;
-  margin: 28px 0 16px -2px;
-  color: var(--grey-for-whited-bg);
+  margin: 25.5px 0 17px -2px;
+  padding-bottom: 0;
+  color: #e7e7e7;
 }
 
 .actions-section .section-item__title:before {
@@ -389,25 +392,24 @@ body {
   width: 70px;
   padding: 33px 0 37px;
   line-height: 0;
-  color: var(--light-for-colored-li);
-  background-color: var(--main-color);
+  color: #f5f6f7;
+  background-color: #5e42b0;
 }
 
 .actions-section .section-item__title:after {
   left: 48px;
   bottom: 72px;
-  background: white;
   border-color: white; 
+  background-color: white;
   opacity: 0.3;
 }
 
 .actions-section .section-item__text {
   font-size: 1.6rem;
-  letter-spacing: 0.9px;
 }
 
 .actions-section .section-item.be__active > .section-item__title {
-  margin-top: 27px;
+  margin-top: 24px;
   margin-bottom: 14px;
 }
 
@@ -415,16 +417,13 @@ body {
   padding-right: 40px;
 }
 
-/* ******************************************** */
+/* *************** Footer *************** */
 
 .footer {
- position: relative;
- display: flex;
- flex-direction: column;
+  position: relative;
   min-height: 568px;
-  /* margin: 0 -20px; */
-  padding: 100px 20px 10px;
-  background: var(--footer-bg) url(../images/img/game_767.jpg) no-repeat 100% 40% / 141.5%;
+  padding: 99px 20px 10px;
+  background: #f2f2f2 url(../images/img/game_767.jpg) no-repeat right 40% / 141.5%;
 }
 
 .footer:after {
@@ -434,70 +433,79 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--darkened-main-color);
+  background-color: #090c35;
   opacity: 0.9;
 }
 
+.footer > .logo-btn {
+  margin-bottom: 49px;
+  text-align: center;
+  line-height: 0;
+}
+
 .surface-logo-icon {
-  width: 58px;
-  height: 47px;
-  transform: scale(1.1, 1);
+  width: 100%;
+  transform: scale(1, 0.85);
   fill: white;
 }
 
-.footer > .logo-btn-with-text {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-
 .footer-offer {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto 73px;
-  font: normal 1.4rem/normal var(--main-font);
-  letter-spacing: 1px;
-  word-spacing: -1.5px;
+  font-size: 1.4rem;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  word-spacing: -0.15rem;
   text-align: center;
   text-transform: uppercase;
-  color: var(--blurred-main-color);
+  color: #9b8ec1;
   z-index: 1;
 }
 
 .footer-offer-cta {
-  font-weight: bold;
   font-size: 3.2rem;
-  word-spacing: 2px;
+  font-weight: bold;
+  word-spacing: 0.2rem;
   color: white;
 }
 
-.footer > .logo-btn {
-  align-self: center;
-  margin: 0 auto 49px;
-  line-height: 0;
-  z-index: 1;
+.footer > .application-btns-group {
+  margin-bottom: 67px;
 }
 
-/* **** Tablets **** */
+.footer > .logo-btn-with-text {
+  margin-bottom: 0;
+}
+
+
+/* *************** For Tablets *************** */ 
+
 
 @media (min-width: 640px) and (max-width: 959px) {
+   
+  /* *************** Header *************** */
+
   .header {
-    min-height: calc(100vh - 8px);
+    min-height: 959px;
+    /*? ???? ?????? ? ?????????? ???*/
+    /*height: 100vh;*/ 
     padding: 38px;
-    background: var(--header-bg) url(../images/img/football_767.jpg) no-repeat 0% 35% / cover;
+    background: #aa4c32 url(../images/img/football_1280.jpg) no-repeat center 35% / cover;
   }
 
   .logo-btn-with-text {
     max-width: 210px;
     width: 29.8571%;
-    margin-bottom: 0;
+    margin-bottom: 167px;
   }
 
   .header-offer {
     padding-left: 49px;
-    margin-bottom: auto;
-    margin-top: 167px;
+    margin-bottom: 300px;
     font-size: 6.4rem;
-    letter-spacing: 3.2px;
+    letter-spacing: 0.32rem;
   }
 
   .header-offer-cta {
@@ -505,17 +513,30 @@ body {
     padding-left: 105px;
   }
 
+  .application-btns-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .header .application-btns-group {
     margin-bottom: 53px;
-    flex-direction: row;
   }
 
   .application-btn {
-    max-width: 390px;
+    max-width: 325px;
     min-width: 175px;
     width: 50%;
-    margin: 0 2% 0 3%;
+    margin-left: 3%;
+    margin-bottom: 0;
     border-radius: 38px;
+  }
+
+  .application-btn:nth-child(odd) {
+    margin-right: 2%;
+  }
+
+  .application-btn:nth-child(even) {
+    margin-right: 3%;
   }
   
   .application-btn-link {
@@ -525,25 +546,240 @@ body {
 
   .appstore-icon, .googleplay-icon {
     width: 45px;
-    margin-left: -1px;
-    margin-right: 22px;
+    /*?? ??? ???? ???????????? ???*/
+    /*margin-left: -1px;   
+    margin-right: 22px;*/  
   }
 
   .googleplay-icon {
-     margin: -3px 25px -2px 16px;
+    margin: -3px 8.12% -2px 17.25%;
   }
 
-  .application-btn-content {
-    max-width: 234px;
+  .appstore-icon {
+    margin: -7px 7% 0 11.75%;
   }
 
   .application-btn-cta {
     line-height: 1.15;
-    letter-spacing: -0.15px;
+    letter-spacing: -0.015rem;
   }
   
   .application-btn__googleplay .application-btn-cta {
     margin-top: -4px;
   }
 
+  /* *************** Common sections *************** */
+
+  .section-item__title {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 3.2rem;
+  }
+
+  .section-item__title:before {
+    left: -2px;
+    font-size: 2rem;
+  }
+
+  .section-item__title:after { 
+    left: -1px;
+    bottom: 27px;
+    width: 16px;
+    border-width: 2.5px;
+    border-radius: 2.5px;
+  }
+
+  .section-item__text {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: 0.095rem;
+  }
+
+  /* *************** Athleths & Players section *************** */
+
+  .athlets-section .section-title,
+  .players-section .section-title {
+    padding-top: 72px;
+    font-size: 8rem;
+    z-index: 1;
+  }
+
+  .athlets-section .section-item:first-child,
+  .players-section .section-item:first-child {
+    padding-top: 45px;
+    background-color: transparent;
+  }
+
+  /* *************** Athleths section only *************** */
+
+  .athlets-section .section-title {
+    padding-left: 290px;
+    padding-bottom: 0;
+  }
+
+  .athlets-section .section-list.with-background-preview:after {
+    top: -58px;
+    left: -163px;
+    right: 58vw;
+    bottom: -34px;
+    background-image: url('../images/img/footballer_566.png');
+    background-position: left center;
+  }
+
+  .athlets-section .section-item {
+    padding: 34px 28px 34px 293px;
+  }
+
+  /* *************** Players section *************** */
+
+  .players-section .section-title {
+    padding-left: 28px;
+    padding-bottom: 0;
+  }
+
+  .players-section .section-list.with-background-preview:after {
+    top: -150px;
+    left: 332px;
+    right: 0;
+    bottom: 95px;
+    background-image: url('../images/img/basketballer_436.png');
+    background-position: right center;
+  }
+
+  .players-section .section-item {
+    padding: 35px 328px 34px 32px;
+  }
+
+  .players-section .section-item.with-important-info {
+    padding-right: 300px;
+    padding-bottom: 32px;
+  }
+
+  .players-section .section-item.with-important-info .section-item__title {
+    padding-bottom: 17px;
+  }
+
+  .players-section .section-item.with-important-info .section-item__title:after {
+    bottom: 24px;
+  }
+
+  .players-section .section-item.with-important-info .section-item__text {
+   font-size: 1.8rem;
+   letter-spacing: 0.105rem;
+  }
+
+  /* *************** Actions section *************** */
+
+  .actions-section .section-item.be__active {
+    padding-bottom: 98px;
+  }
+
+  .actions-section .section-item.find__contact {
+    padding-bottom: 107px;
+  }
+
+  .actions-section .section-item.work__it {
+    padding-bottom: 111px; 
+  }
+
+  .actions-section .section-item__preview ~ * {
+    padding-left: 32px;
+    padding-right: 40px;
+  }
+
+  .actions-section .section-item__title {
+    margin: 57px 0 17px -6px;
+    font-size: 8rem;
+    letter-spacing: 0;
+  }
+
+  .actions-section .section-item__title:before {
+    top: -149px;
+    left: 39px;
+    width: 116px;
+    padding: 51px 0 65px;
+    font-size: 2.4rem;
+  }
+
+  .actions-section .section-item__title:after {
+    left: 83px;
+    bottom: 170px;
+    width: 22px;
+    border-width: 2.5px;
+  }
+  
+  .actions-section .section-item.be__active > .section-item__title {
+    margin-top: 65px;
+    margin-bottom: 17px;
+  }
+
+  .actions-section .section-item.work__it > .section-item__title {
+    margin-left: 0px;
+  }
+
+  .actions-section .section-item.work__it > .section-item__title:before {
+    left: 33px;
+  }
+
+  .actions-section .section-item.work__it > .section-item__title:after {
+    left: 77px;
+  }
+
+  .actions-section .section-item__text {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.14rem;
+  }
+
+  .actions-section .section-item.be__active > .section-item__text {
+    padding-right: 45px;
+  }
+
+  /* *************** Footer *************** */
+
+  .footer {
+    min-height: 959px;
+    /* ???? */
+    /*height: 100vh;*/ 
+    padding: 126px 38px 24px; /* vw, vh, vmin, vmax?? */
+    background: #f2f2f2 url(../images/img/game_1280.jpg) no-repeat center 40% / cover;
+  }
+
+  .footer > .logo-btn {
+    margin-bottom: 70px;
+  }
+
+  .logo-btn {
+    max-width: 130px;
+    min-width: 102px;
+    border-radius: 22%;
+  }
+
+  .logo-btn:active {
+    box-shadow: inset 10px 10px 20px -6px rgba(0, 0, 0, 0.6);
+  }
+
+  .surface-logo-icon {
+    transform: scale(1.1, 1);
+  }
+
+  .footer-offer-cta {
+    margin-bottom: 2px;
+    font-size: 8rem;
+    line-height: 1;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .footer-offer {
+    margin: 0 -14px 272px;
+    font-size: 3.6rem;
+    line-height: 1.6666666;
+    letter-spacing: 0.25px;
+  }
+
+  .footer > .application-btns-group {
+    margin-bottom: 56px;
+  }
 }
