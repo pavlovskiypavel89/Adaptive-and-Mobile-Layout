@@ -53,8 +53,8 @@ a {
 .header {
   position: relative;
   /* ???? */
-  min-height: 568px;
-  padding: 33px 20px;
+  height: 100vh;
+  padding: calc(33/568 * 100vh) calc(20/568 * 100vh);
   background: #aa4c32 url('../images/img/football_767.jpg') no-repeat center 35% / 141.5%;
   color: white;
 }
@@ -76,7 +76,7 @@ a {
   max-width: 166px;
   min-width: 112px;
   width: 47.8571%;
-  margin: 0 auto 130px;
+  margin: 0 auto calc(130/568 * 100vh);
   line-height: 0;
   transform: scale(1);
   transition: transform 0.3s;
@@ -118,7 +118,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 84px;
+  margin-bottom: calc(84/568 * 100vh);
   font-size: 2.8rem;
   line-height: 1.2;
   letter-spacing: 0.12rem;
@@ -139,7 +139,7 @@ a {
 }
 
 .header .application-btns-group {
-  margin-bottom: 37px;
+  margin-bottom: calc(37/568 * 100vh);
 }
 
 .application-btn {
@@ -402,8 +402,8 @@ a {
 
 .footer {
   position: relative;
-  min-height: 568px;
-  padding: 99px 20px 10px;
+  height: 100vh;
+  padding: calc(99/568 * 100vh) calc(20/568 * 100vh) calc(10/568 * 100vh);
   background: #f2f2f2 url(../images/img/game_767.jpg) no-repeat right 40% / 141.5%;
 }
 
@@ -419,7 +419,7 @@ a {
 }
 
 .footer > .logo-btn {
-  margin-bottom: 49px;
+  margin-bottom: calc(49/568 * 100vh);
   text-align: center;
   line-height: 0;
 }
@@ -434,7 +434,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 73px;
+  margin: 0 auto calc(73/568 * 100vh);
   font-size: 1.4rem;
   line-height: normal;
   letter-spacing: 0.1rem;
@@ -453,7 +453,7 @@ a {
 }
 
 .footer > .application-btns-group {
-  margin-bottom: 67px;
+  margin-bottom: calc(67/568 * 100vh);
 }
 
 .footer > .logo-btn-with-text {
