@@ -584,7 +584,7 @@ a {
 
   .athlets-section .section-item:first-child,
   .players-section .section-item:first-child {
-    padding-top: 45px;
+    padding-top: 46px;
     background-color: transparent;
   }
 
@@ -630,7 +630,7 @@ a {
 
   .players-section .section-item.with-important-info {
     padding-right: 300px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
   }
 
   .players-section .section-item.with-important-info .section-item__title {
