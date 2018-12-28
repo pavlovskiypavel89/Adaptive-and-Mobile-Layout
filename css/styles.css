@@ -828,7 +828,6 @@ a {
   }
 
   .header-offer-cta {
-    padding-top: 10px;
     padding-left: calc(31.8vw - 160.56px);
     line-height: 1;
   }
@@ -838,46 +837,42 @@ a {
   }
 
   .application-btn {
-    max-width: 325px;
-    min-width: 175px;
+    max-width: 310px;
+    min-width: 185px; /* nado proverit` */
     width: 50%;
-    margin-left: 3%;
+    margin-left: 1.5%;
     margin-bottom: 0;
     border-radius: 38px;
   }
 
   .application-btn:nth-child(odd) {
-    margin-right: 2%;
+    margin-right: 1.5%;
   }
 
   .application-btn:nth-child(even) {
-    margin-right: 3%;
+    margin-right: 2%;
   }
   
   .application-btn-link {
-    padding: 20px 0 18px;
+    padding: 14px 0 16px;
     font-size: 1.5rem;
   }
 
-  .appstore-icon, .googleplay-icon {
-    width: 45px;
+  .appstore-icon {
+    width: 49px;
   }
 
   .googleplay-icon {
-    margin: -3px 8.12% -2px 17.25%;
+    width: 48px;
+    margin: 0 24px 0 54px;
   }
 
   .appstore-icon {
-    margin: -7px 7% 0 11.75%;
+    margin: -4px 20px 0 36px;
   }
 
   .application-btn-cta {
-    line-height: 1.15;
-    letter-spacing: -0.015rem;
-  }
-  
-  .application-btn__googleplay .application-btn-cta {
-    margin-top: -4px;
+    margin-top: 4px;
   }
 }
 
