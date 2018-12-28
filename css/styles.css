@@ -834,7 +834,7 @@ a {
   }
 
   .header .application-btns-group {
-    margin-bottom: calc(53/960 * 100vmax);
+    margin-bottom: 0;
   }
 
   .application-btn {
