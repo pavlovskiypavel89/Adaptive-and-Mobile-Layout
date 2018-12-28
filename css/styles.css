@@ -809,7 +809,7 @@ a {
   /* *************** Header *************** */
 
   .header {
-    min-height: 960px;
+    min-height: 100vh;
     padding: 45px 90px;
     background: #aa4c32 url(../images/img/football_1920.jpg) no-repeat center / cover;
   }
@@ -828,7 +828,8 @@ a {
   }
 
   .header-offer-cta {
-    padding-left: 450px;
+    padding-left: calc(31.8vw - 160.56px);
+    line-height: 1;
   }
 
   .header .application-btns-group {
