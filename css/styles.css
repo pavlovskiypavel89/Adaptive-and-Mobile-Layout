@@ -30,8 +30,10 @@ main {
 }
 
 h1, h2, h3, h4 {
+  position: relative;
   font-weight: bold;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 a {
@@ -222,7 +224,6 @@ a {
 }
 
 .section-item__title {
-  position: relative;
   padding-left: 25px;
   padding-bottom: 20px;
   font-size: 2.2rem;
@@ -253,10 +254,12 @@ a {
 }
 
 .section-item__text {
+  position: relative;
   font-size: 1.5rem;
   line-height: 1.25;
   letter-spacing: 0.09rem;
   word-spacing: -0.1rem;
+  z-index: 1;
 }
 
 /* *************** Athleths & Players section *************** */
@@ -579,7 +582,6 @@ a {
   .players-section .section-title {
     padding-top: 72px;
     font-size: 8rem;
-    z-index: 1;
   }
 
   .athlets-section .section-item:first-child,
