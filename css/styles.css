@@ -875,6 +875,10 @@ a {
   .application-btn-cta {
     margin-top: 3px;
   }
+	
+  .application-btn-brand {
+    margin-top: -3px;
+  }	 
 }
 
 
