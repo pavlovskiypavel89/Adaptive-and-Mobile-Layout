@@ -799,12 +799,25 @@ a {
 
 /* *************** For Desktops *************** */ 
 
+@media (min-width: 961px) and (max-width: 1919px) {
+  .header {
+    min-height: 100vh;	  
+  }
+}
+
+/* *************** For pixel perfect imaged background *************** */ 
+@media (width: 1920px) {
+  .header {
+    min-height: 960px;
+    height: 100vh;	  
+  }
+}
+	
 @media (min-width: 961px) and (max-width: 1920px) {
    
   /* *************** Header *************** */
 
   .header {
-    min-height: 100vh;
     padding: 45px 90px;
     background: #aa4c32 url(../images/img/football_1920.jpg) no-repeat center / cover;
   }
