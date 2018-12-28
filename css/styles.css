@@ -771,7 +771,7 @@ a {
   }
 
   .footer-offer {
-    margin: 0 calc(-14/959 * 100vh) calc(272/959 * 100vh);;
+    margin: 0 calc(-14/959 * 100vh) calc(272/959 * 100vh);
     font-size: 3.6rem;
     line-height: 1.6666666;
     letter-spacing: 0.25px;
