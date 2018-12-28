@@ -88,7 +88,7 @@ a {
   display: block;
   max-width: 100px;
   min-width: 72px;
-  width: 22.85%;
+  width: 18.85%;
   margin: 0 auto;
   padding: 3.6% 2.6%;  
   border-radius: 20% ;
@@ -488,6 +488,7 @@ a {
   /* *************** Header *************** */
 
   .header {
+    min-height: 640px;
     padding: calc(38/959 * 100vh);
     background: #aa4c32 url(../images/img/football_1280.jpg) no-repeat center 35% / auto;
   }
@@ -737,13 +738,14 @@ a {
   /* *************** Footer *************** */
 
   .footer {
+    min-height: 640px;
     height: 100vh;
     padding: calc(126/959 * 100vh) calc(38/959 * 100vh) calc(24/959 * 100vh); 
     background: #f2f2f2 url(../images/img/game_1280.jpg) no-repeat center / cover;
   }
 
   .footer > .logo-btn {
-    margin-bottom: 70px;
+    margin-bottom: calc(70/959 * 100vh);
   }
 
   .logo-btn {
@@ -769,14 +771,14 @@ a {
   }
 
   .footer-offer {
-    margin: 0 -14px 272px;
+    margin: 0 calc(-14/959 * 100vh) calc(272/959 * 100vh);;
     font-size: 3.6rem;
     line-height: 1.6666666;
     letter-spacing: 0.25px;
   }
 
   .footer > .application-btns-group {
-    margin-bottom: 56px;
+    margin-bottom: calc(56/959 * 100vh);
   }
 }
 
@@ -784,11 +786,9 @@ a {
   .players-section .section-list.with-background-preview:after {
   /* min img h = 435px - for 641px min-width  
      max img h = 565px - for 768px max-width;
-
      435px = a * (641/100)px + k
      565px = a * (768/100)px + k;
      where, a in 1vw and k in 1px.
-
      a = 101.5625vw, k = 215px.
   */
     background-size: auto calc(101.5625vw - 215px);
@@ -813,7 +813,7 @@ a {
 
   .header-offer {
     margin-bottom: calc(300/959 * 100vmin);
-    font-size: 5.2rem;
+    font-size: 5rem;
   }
 
   .header .application-btns-group {
@@ -824,7 +824,21 @@ a {
     font-size: 2rem;
   }
 
+  .athlets-section .section-list.with-background-preview:after, 
+  .players-section .section-list.with-background-preview:after {
+    height: 160vh;
+  }
+
   .players-section .section-item.with-important-info .section-item__text {
     font-size: 2.4rem;
+  }
+
+  .footer-offer {
+    margin-bottom: calc(272/959 * 75vh);
+    font-size: 2.8rem;
+  }
+
+  .footer-offer-cta {
+    font-size: 7rem;
   }
 }
