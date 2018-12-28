@@ -467,7 +467,6 @@ a {
   /* *************** Header *************** */
 
   .header {
-    min-height: 100vmax;
     padding: calc(38/960 * 100vmax);
     background: #aa4c32 url(../images/img/football_1280.jpg) no-repeat center 35% / auto;
   }
@@ -717,7 +716,6 @@ a {
   /* *************** Footer *************** */
 
   .footer {
-    min-height: 100vmax;
     padding: calc(126/960 * 100vmax) calc(38/960 * 100vmax) calc(24/960 * 100vmax); 
     background: #f2f2f2 url(../images/img/game_1280.jpg) no-repeat center / cover;
   }
