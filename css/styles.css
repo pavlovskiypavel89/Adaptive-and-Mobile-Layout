@@ -464,44 +464,44 @@ a {
 
 /* *************** For Tablets *************** */ 
 
-@media (min-width: 641px) and (max-width: 959px) and (orentation: landscape) { 
+@media (min-width: 641px) and (max-width: 960px) and (orentation: landscape) { 
   .header {
-    padding: calc(38/959 * 100vmin);
+    padding: calc(38/960 * 100vmin);
   }
 
   .logo-btn-with-text {
-    margin-bottom: calc(167/959 * 100vmin);
+    margin-bottom: calc(167/960 * 100vmin);
   }
 
   .header-offer {
-    margin-bottom: calc(300/959 * 100vmin);
+    margin-bottom: calc(300/960 * 100vmin);
     font-size: 5.2rem;
   }
 
   .header .application-btns-group {
-    margin-bottom: calc(53/959 * 100vmin);
+    margin-bottom: calc(53/960 * 100vmin);
   }
 }
 
-@media (min-width: 641px) and (max-width: 959px) {
+@media (min-width: 641px) and (max-width: 960px) {
    
   /* *************** Header *************** */
 
   .header {
     min-height: 640px;
-    padding: calc(38/959 * 100vh);
+    padding: calc(38/960 * 100vh);
     background: #aa4c32 url(../images/img/football_1280.jpg) no-repeat center 35% / auto;
   }
 
   .logo-btn-with-text {
     max-width: 210px;
     width: 29.8571%;
-    margin-bottom: calc(167/959 * 100vmax);
+    margin-bottom: calc(167/960 * 100vmax);
   }
 
   .header-offer {
     padding-left: 49px;
-    margin-bottom: calc(300/959 * 100vmax);
+    margin-bottom: calc(300/960 * 100vmax);
     font-size: 6.4rem;
     letter-spacing: 0.32rem;
   }
@@ -517,7 +517,7 @@ a {
   }
 
   .header .application-btns-group {
-    margin-bottom: calc(53/959 * 100vmax);
+    margin-bottom: calc(53/960 * 100vmax);
   }
 
   .application-btn {
@@ -620,7 +620,7 @@ a {
   .athlets-section .section-list.with-background-preview:after {
     top: -58px;
     left: -163px;
-		height: 90vh;
+    height: 90vh;
     background-image: url('../images/img/footballer_497.png');
     background-size: 497px auto;
     background-position: left top;
@@ -740,12 +740,12 @@ a {
   .footer {
     min-height: 640px;
     height: 100vh;
-    padding: calc(126/959 * 100vh) calc(38/959 * 100vh) calc(24/959 * 100vh); 
+    padding: calc(126/960 * 100vh) calc(38/960 * 100vh) calc(24/960 * 100vh); 
     background: #f2f2f2 url(../images/img/game_1280.jpg) no-repeat center / cover;
   }
 
   .footer > .logo-btn {
-    margin-bottom: calc(70/959 * 100vh);
+    margin-bottom: calc(70/960 * 100vh);
   }
 
   .logo-btn {
@@ -771,14 +771,14 @@ a {
   }
 
   .footer-offer {
-    margin: 0 calc(-14/959 * 100vh) calc(272/959 * 100vh);
+    margin: 0 calc(-14/960 * 100vh) calc(272/960 * 100vh);
     font-size: 3.6rem;
     line-height: 1.6666666;
     letter-spacing: 0.25px;
   }
 
   .footer > .application-btns-group {
-    margin-bottom: calc(56/959 * 100vh);
+    margin-bottom: calc(56/960 * 100vh);
   }
 }
 
@@ -802,22 +802,22 @@ a {
   }
 }
 
-@media (min-width: 641px) and (max-width: 959px) and (orientation: landscape) { 
+@media (min-width: 641px) and (max-width: 960px) and (orientation: landscape) { 
   .header {
-    padding: calc(38/959 * 100vmax);
+    padding: calc(38/960 * 100vmax);
   }
 
   .logo-btn-with-text {
-    margin-bottom: calc(167/959 * 100vmin);
+    margin-bottom: calc(167/960 * 100vmin);
   }
 
   .header-offer {
-    margin-bottom: calc(300/959 * 100vmin);
+    margin-bottom: calc(300/960 * 100vmin);
     font-size: 5rem;
   }
 
   .header .application-btns-group {
-    margin-bottom: calc(53/959 * 100vmin);
+    margin-bottom: calc(53/960 * 100vmin);
   }
 
   .section-item__text {
@@ -834,7 +834,7 @@ a {
   }
 
   .footer-offer {
-    margin-bottom: calc(272/959 * 75vh);
+    margin-bottom: calc(272/960 * 75vh);
     font-size: 2.8rem;
   }
 
