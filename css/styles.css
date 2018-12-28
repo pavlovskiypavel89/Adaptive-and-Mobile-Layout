@@ -603,7 +603,7 @@ a {
   .athlets-section .section-list.with-background-preview:after {
     top: -58px;
     left: -163px;
-    height: 90vh;
+    height: 100%;
     background-image: url('../images/img/footballer_497.png');
     background-size: 497px auto;
     background-position: left top;
@@ -623,7 +623,7 @@ a {
   .players-section .section-list.with-background-preview:after {
     top: -113px;
     right: 0;
-    height: 90vh;
+    height: 100%;
     background-image: url('../images/img/basketballer_436.png');
     background-size: 436px auto;
     background-position: right top;
@@ -779,11 +779,6 @@ a {
 @media (min-width: 641px) and (max-width: 960px) and (orientation: landscape) { 
   .section-item__text {
     font-size: 2rem;
-  }
-
-  .athlets-section .section-list.with-background-preview:after, 
-  .players-section .section-list.with-background-preview:after {
-    height: 160vh;
   }
 
   .players-section .section-item.with-important-info .section-item__text {
