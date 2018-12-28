@@ -828,6 +828,7 @@ a {
   }
 
   .header-offer-cta {
+    padding-top: 10px;
     padding-left: calc(31.8vw - 160.56px);
     line-height: 1;
   }
