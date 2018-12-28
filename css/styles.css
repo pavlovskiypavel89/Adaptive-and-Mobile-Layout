@@ -754,7 +754,7 @@ a {
   }
 
   .footer > .application-btns-group {
-    margin-bottom: calc(56/960 * 100vmax);
+    margin-bottom: calc(54/960 * 100vmax);
   }
 }
 
