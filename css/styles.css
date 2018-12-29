@@ -40,6 +40,13 @@ a {
   text-transform: uppercase;
 }
 
+img {
+	font-size: 2rem; 
+	font-weight: bold; 
+	text-indent: 0.5rem; 
+	text-transform: uppercase;
+}
+
 .wrapper {
   max-width: 1920px;
   min-width: 320px;
@@ -481,7 +488,7 @@ a {
   }
 
   .logo-btn-with-text {
-    max-width: 191px;
+    max-width: 205px;
     width: 29.8571%;
     margin-bottom: calc(167/960 * 100vmax);
   }
