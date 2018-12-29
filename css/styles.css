@@ -483,7 +483,7 @@ a {
   }
 
   .logo-btn-with-text {
-    max-width: 194px;
+    max-width: 191px;
     width: 29.8571%;
     margin-bottom: calc(167/960 * 100vmax);
   }
@@ -870,7 +870,7 @@ For auto-size header-offer on desktop
   }
 
   .logo-btn-with-text {
-    max-width: 194px;
+    max-width: 191px;
     margin-bottom: 289px;
   }
 
