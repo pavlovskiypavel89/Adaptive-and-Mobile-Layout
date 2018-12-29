@@ -603,7 +603,7 @@ a {
   .athlets-section .section-list.with-background-preview:after {
     top: -58px;
     left: -163px;
-    height: 100%;
+    height: 100vmax;
     background-image: url('../images/img/footballer_497.png');
     background-size: 497px auto;
     background-position: left top;
@@ -623,7 +623,7 @@ a {
   .players-section .section-list.with-background-preview:after {
     top: -113px;
     right: 0;
-    height: 100%;
+    height: 100vmax;
     background-image: url('../images/img/basketballer_436.png');
     background-size: 436px auto;
     background-position: right top;
@@ -640,10 +640,6 @@ a {
 
   .players-section .section-item.with-important-info .section-item__title {
     padding-bottom: 17px;
-  }
-
-  .players-section .section-item.with-important-info .section-item__title:after {
-    bottom: 24px;
   }
 
   .players-section .section-item.with-important-info .section-item__text {
@@ -812,6 +808,57 @@ a {
     height: 100vh;	  
   }
 }
+
+/*
+For auto-size header-offer on desktop
+@media (min-width: 961px) and (max-width: 1280px) {
+  .header-offer {
+    font-size: calc(8.125vw - 1.4rem);
+  }  
+}
+
+@media (min-width: 1281px) {
+  .header-offer {
+    font-size: 9rem;
+  }  
+}
+*/
+
+@media (min-width: 961px) and (max-width: 1199px) {
+  .athlets-section .section-item {
+    padding-right: 32px;
+  }
+
+  .players-section .section-item {
+    padding-left: 32px;
+  }
+
+  .players-section .section-title {
+    padding-left: 28px;
+  }
+
+  .players-section .section-list.with-background-preview:after {
+    right: calc(27.1vw - 695.439px);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .athlets-section .section-item {
+    padding-right: 180px;
+  }
+
+  .players-section .section-item {
+    padding-left: 182px;
+  }
+
+  .players-section .section-title {
+    padding-left: 176px;
+  }
+
+  .players-section .section-list.with-background-preview:after {
+    right: calc(50% + calc(17.77777vw - 1175.33333px));  
+  }
+}
 	
 @media (min-width: 961px) and (max-width: 1920px) {
    
@@ -886,9 +933,130 @@ a {
 	
   .application-btn-brand {
     margin-top: -3px;
-  }	 
-}
+  }
 
+  /* *************** Common sections *************** */
+
+  .section-title {
+    font-size: 8rem;
+  }
+
+  .section-item__title {
+    padding-left: 32px;
+    padding-bottom: 16px;
+    font-size: 3.6rem;
+  }
+
+  .section-item__title:before {
+    top: 3px;
+    left: 0;
+    font-size: 2rem;
+  }
+
+  .section-item__title:after { 
+    top: 29px;
+    left: 1px;
+    width: 16px;
+    border-width: 2.5px;
+    border-radius: 2.5px;
+  }
+
+  .section-item__text {
+    position: relative;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+    word-spacing: 0;
+  }
+
+  /* *************** Athleths & Players section *************** */
+
+  .athlets-section .section-title,
+  .players-section .section-title {
+    padding-top: 104px;
+    padding-bottom: 0; 
+  }
+
+  .athlets-section .section-item:first-child,
+  .players-section .section-item:first-child {
+    background-color: transparent;
+  }
+
+  .athlets-section .section-item:first-child {
+    padding-top: 92px;
+  }
+  
+  .players-section .section-item:first-child {
+    padding-top: 93px;
+  }
+
+  /* *************** Athleths section only *************** */
+
+  .athlets-section .section-title {
+    padding-left: 52vw;
+  }
+
+  .athlets-section .section-list.with-background-preview:after {
+    top: -156px;
+    left: calc(50% - 570px);
+    height: 100vmax;
+    background-image: url(../images/img/footballer_566.png);
+    background-size: 566px auto;
+    background-position: left top;
+  }
+
+  .athlets-section .section-item {
+    padding-top: 52px;
+    padding-left: 52vw;
+    padding-bottom: 54px;
+  }
+
+  /* *************** Players section only *************** */
+
+  .players-section .section-title {
+    padding-bottom: 0px;
+  }
+
+  .players-section .section-list.with-background-preview:after {
+    top: -161px;
+    height: 100vmax;
+    background-image: url(../images/img/basketballer_991.png);
+    background-size: 991px auto;
+    background-position: right top;
+  }
+
+  .players-section .section-item {
+    padding-top: 50px;
+    padding-right: 48vw;
+    padding-bottom: 53px;
+  }
+  
+  .players-section .section-item:first-child .section-item__title {
+    padding-bottom: 18px;
+    margin-left: -2px;
+  }
+
+  .players-section .section-item:nth-child(2) {
+    padding-bottom: 82px;
+  }
+
+  .players-section .section-item:nth-child(2) .section-item__title {
+    padding-bottom: 28px;
+  }
+
+  .players-section .section-item.with-important-info .section-item__title {
+    margin-top: 2px;
+    margin-left: -1px;
+    padding-bottom: 19px;
+  }
+
+  .players-section .section-item.with-important-info .section-item__text {
+   letter-spacing: 0.065rem;
+  }
+
+  /* *************** Actions section *************** */
+	 
+}
 
 /* *************** For Large Desktops *************** */ 
 
