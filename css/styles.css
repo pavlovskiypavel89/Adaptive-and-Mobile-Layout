@@ -112,7 +112,6 @@ a {
 
 .surface-logo-icon-with-text {
   max-width: 100%;
-  fill: white;
 }
 
 .header-offer {
@@ -429,7 +428,6 @@ a {
 .surface-logo-icon {
   width: 100%;
   transform: scale(1, 0.85);
-  fill: white;
 }
 
 .footer-offer {
@@ -816,7 +814,6 @@ For auto-size header-offer on desktop
     font-size: calc(8.125vw - 1.4rem);
   }  
 }
-
 @media (min-width: 1281px) {
   .header-offer {
     font-size: 9rem;
