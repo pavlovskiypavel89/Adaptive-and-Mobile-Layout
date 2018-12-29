@@ -386,7 +386,7 @@ img {
 }
 
 .actions-section .section-item__title:after {
-	top: -42px;
+  top: -42px;
   left: 48px;
   border-color: white; 
   background-color: white;
