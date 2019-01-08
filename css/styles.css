@@ -66,6 +66,7 @@ img {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 6.25vw;
+  overflow: hidden;	
 }
 
 /* *************** Header *************** */ 
@@ -1188,6 +1189,10 @@ img {
 }
 
 @media (min-width: 1576px) {
+  .wrapper {
+    overflow: unset;
+  }
+	
   .header:before,
   .footer:before, 
   .header:after,
