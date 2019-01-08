@@ -758,6 +758,11 @@ img {
   .players-section .section-item.with-important-info {
     padding: 31px 35.15625vw 34px 0; 
   }
+	
+  .players-section .section-item:before {
+    left: -4.296875vw;
+    right: -50vw;
+  }
 
   .players-section .section-item.with-important-info .section-item__text {
     font-size: 1.8rem;
