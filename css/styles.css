@@ -416,7 +416,7 @@ img {
 }
 
 .actions-section .section-item__title:after {
-	top: -44px;
+  top: -44px;
   left: 28px;
   border-color: white; 
   background-color: white;
@@ -759,9 +759,9 @@ img {
   }
 
   .players-section .section-item.with-important-info .section-item__text {
-   font-size: 1.8rem;
-   line-height: 1.55555;
-   letter-spacing: 0.105rem;
+    font-size: 1.8rem;
+    line-height: 1.55555;
+    letter-spacing: 0.105rem;
   }
 
   /* *************** Actions section *************** */
@@ -1180,7 +1180,7 @@ img {
   }
 
   .players-section .section-item.with-important-info .section-item__text {
-   letter-spacing: 0.065rem;
+    letter-spacing: 0.065rem;
   }
 
   /* *************** Actions section *************** */
