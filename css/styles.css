@@ -616,8 +616,8 @@ img {
   }
 
   .header-offer-cta {
-    width: calc(10/12*100%);
     margin-top: 2px;
+    margin-right: -1px;
   }
 
   .application-btns-group {
@@ -906,6 +906,7 @@ img {
   }
 }
 
+
 @media (orientation: landscape) {
   .header,
   .footer {
@@ -917,6 +918,7 @@ img {
     background-size: cover;
   }
 }
+
 
 @media (min-width: 641px) and (max-width: 767px) { 
   .players-section .section-list.with-background-preview:after {
@@ -935,6 +937,7 @@ img {
   }
 }
 
+
 @media (min-width: 641px) and (max-width: 960px) and (orientation: landscape) { 
   .section-item__text {
     font-size: 2rem;
@@ -947,31 +950,6 @@ img {
 
 /* *************** For Desktops *************** */ 
 
-@media (min-width: 961px) and (max-width: 1639px) {
-  .athlets-section .section-item {
-    padding-right: 17px;
-  }
-
-  .players-section .section-title {
-    margin-left: 0;
-    padding-left: 20px;
-  }
-
-  .players-section .section-item {
-    padding-left: 24px;
-  }
-
-  .players-section .section-list.with-background-preview:after {
-    right: -42.7vw;
-  }
-}
-
-@media (min-width: 1640px) and (max-width: 1920px) {
-  .players-section .section-list.with-background-preview:after {
-    right: -42.7vw;
-  }
-}
-	
 @media (min-width: 961px) and (max-width: 1920px) {
   .wrapper {
     padding: 0;
@@ -1101,6 +1079,7 @@ img {
 
   .section-item__title:after { 
     top: 34px;
+    left: 1px;
     width: 17px;
     border-width: 2.5px;
     border-radius: 2.5px;
@@ -1132,13 +1111,13 @@ img {
 
   .athlets-section .section-title,
   .athlets-section .section-list.with-background-preview {
-    width: calc(6/12*100% + 1vw);
-    padding-left: 3.6vw;
+    width: calc(6/12*100% + 14px);
+    padding-left: 64px;
   }
 
   .athlets-section .section-list.with-background-preview:after {
     top: -193px;
-    left: -546px;
+    left: -551px;
     right: 0;
     height: 100vmax;
     background-image: url('../images/img/footballer_566.png');
@@ -1159,7 +1138,7 @@ img {
 
   .players-section .section-title,
   .players-section .section-list.with-background-preview {
-    width: calc(6/12*100% + 1vw);
+    width: calc(6/12*100% + 14px);
   }  
 
   .players-section .section-title {
@@ -1206,10 +1185,40 @@ img {
   }
 
   /* *************** Actions section *************** */
+
 	 
 }
 
-@media (min-width: 1576px) {
+
+@media (min-width: 961px) and (max-width: 1575px) {
+  .athlets-section .section-item {
+    padding-right: 17px;
+  }
+
+  .players-section .section-title {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+
+  .players-section .section-item {
+    padding-left: 24px;
+  }
+
+  .players-section .section-list.with-background-preview:after {
+    right: calc(8.632vw - 982px);
+    /*
+      min right coord = -899px - for 961px min-width  
+      max right coord = -846px - for 1575px max-width;
+      -846px = a * (1575/100)px + k
+      -899px = a * (961/100)px + k;
+      where, a in 1vw and k in 1px.
+      a = 8.632vw, k = -982px.
+    */
+  }
+}
+
+
+@media (min-width: 1576px) and (max-width: 1920px) {
   .wrapper {
     overflow: unset;
   }
@@ -1229,12 +1238,14 @@ img {
   .players-section .section-item:before {
     left: calc((-100vmax + 17px + 1558px)/2 - 8px);
   }
+
+  .players-section .section-list.with-background-preview:after {
+    right: -42.9vw;
+  }
 }
 
 /* *************** For Large Desktops *************** */ 
 
 @media (min-width: 1921px) {
-   
-  /* *************** Header *************** */
 
 }
