@@ -950,7 +950,7 @@ img {
 
 /* *************** For Desktops *************** */ 
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .wrapper {
     padding: 0;
   }
@@ -1186,6 +1186,34 @@ img {
 
   /* *************** Actions section *************** */
 
+  .actions-section .section-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .section-item.with-picture-preview,
+  .actions-section .section-item.work__it {
+    padding-bottom: 0;
+  }
+
+  .actions-section .section-item__preview {
+    min-width: 50vmax;
+    max-width: 50vmax;
+    margin-left: -180.5px;
+    line-height: 0;
+  }
+
+  .actions-section .section-item__img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .actions-section .section-item__title {
+    align-self: center;
+    width: calc(5/12*100%);
+    margin-left: 0;
+  }
 
   /* *************** Footer *************** */
 
@@ -1295,7 +1323,7 @@ img {
 }
 
 
-@media (min-width: 1576px) and (max-width: 1920px) {
+@media (min-width: 1576px) {
   .wrapper {
     overflow: unset;
   }
@@ -1319,10 +1347,4 @@ img {
   .players-section .section-list.with-background-preview:after {
     right: -42.9vw;
   }
-}
-
-/* *************** For Large Desktops *************** */ 
-
-@media (min-width: 1921px) {
-
 }
