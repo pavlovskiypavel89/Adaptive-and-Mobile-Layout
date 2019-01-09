@@ -1142,7 +1142,7 @@ img {
     left: -546px;
     right: 0;
     height: 100vmax;
-    background-image: url(../images/img/footballer_566.png);
+    background-image: url('../images/img/footballer_566.png');
     background-size: 566px auto;
     background-position: left top;
   }
@@ -1172,7 +1172,7 @@ img {
     top: -201px;
     left: 0;
     height: 100vmax;
-    background-image: url(../images/img/basketballer_991.png);
+    background-image: url('../images/img/basketballer_991.png');
     background-size: 991px auto;
     background-position: right top;
   }
@@ -1228,7 +1228,6 @@ img {
   }
 
   .players-section .section-item:before {
-
     left: calc((-100vmax + 17px + 1558px)/2 - 8px);
   }
 }
