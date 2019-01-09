@@ -1186,7 +1186,75 @@ img {
 
   /* *************** Actions section *************** */
 
-	 
+
+  /* *************** Footer *************** */
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 960px;
+    padding: 229px 0 52px;
+  }
+
+  .footer:before {
+    background-image: url('../images/img/game_1920.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .footer:before, 
+  .footer:after {
+    left: 0;
+    right: 0;
+  }
+
+  .footer > .logo-btn {
+    width: calc(2/12*100%);
+    margin: 0 15px 0 54px;
+  }
+
+  .logo-btn {
+    max-width: 130px;
+    padding: 20px 14px 23.5px;
+    border-radius: 30px;
+  }
+
+  .logo-btn:active {
+    box-shadow: inset 10px 10px 20px -6px rgba(0, 0, 0, 0.6);
+  }
+
+  .surface-logo-icon {
+    transform: scale(1, 0.91);
+  }
+
+  .footer-offer-cta {
+    margin: 0 0 6px -3px;
+    font-size: 8rem;
+    line-height: 1;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .footer-offer {
+    width: calc(6/12*100%);
+    margin: 9px 0 0;
+    padding: 0 19px;
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1.15;
+    letter-spacing: 0.25px;
+  }
+
+  .footer > .application-btns-group {
+    margin-top: 151px;
+    margin-bottom: 262px;
+  }
+
+  .footer > .logo-btn-with-text {
+    width: 100%;
+  }
 }
 
 
@@ -1214,6 +1282,15 @@ img {
       where, a in 1vw and k in 1px.
       a = 8.632vw, k = -982px.
     */
+  }
+
+  .footer > .logo-btn {
+    margin-left: auto;
+  }
+
+  .footer-offer {
+    min-width: 750px;
+    margin-right: auto;
   }
 }
 
