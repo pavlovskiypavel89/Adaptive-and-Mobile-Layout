@@ -1101,7 +1101,6 @@ img {
 
   .section-item__title:after { 
     top: 34px;
-    left: 1px;
     width: 17px;
     border-width: 2.5px;
     border-radius: 2.5px;
