@@ -1189,7 +1189,6 @@ img {
   .section-item.with-picture-preview {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     padding-bottom: 0 !important;
   }
 
@@ -1219,24 +1218,64 @@ img {
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description {
     width: calc(6/12*100%);
-    margin-top: 20px !important;
+    margin-top: 0px !important;
+    padding-top: 12.5vw;
+    padding-bottom: 6.25vw;
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
-    padding-left: 6.3vw;
+    padding-left: 6.28vw;
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
-    width: calc(6/12*100% + 8.5px);
     padding-right: 6.3vw;
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
     align-self: center;
     margin-left: 0;
-    margin-bottom: 71px;
+    margin-bottom: 0;
     font-size: 8rem;
     letter-spacing: 0;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description > * {
+    margin-left: -6px;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+    top: -28px;
+    width: 168px;
+    padding: 69px 0 86px;
+    font-size: 2.3rem;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
+    top: 61px;
+    width: 21px;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:before {
+    left: calc(-50% + 6.28vw - 4px);
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:before {
+    left: unset;
+    right: calc(-50% + 6.3vw);
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:after {
+    left: calc(-6.28vw - 11px - 4px);
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:after {
+    left: unset;
+    right: calc(-6.28vw - 11px);
+  }
+
+  .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__title {
+     margin-bottom: 0;
+     padding-left: 4px;
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
@@ -1244,6 +1283,11 @@ img {
     font-size: 2.3rem;
     line-height: 1.25;
     letter-spacing: 0.16rem;
+  }
+
+  .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__text {
+     margin-left: -2px;
+     margin-right: -5px;
   }
 
   /* *************** Footer *************** */
