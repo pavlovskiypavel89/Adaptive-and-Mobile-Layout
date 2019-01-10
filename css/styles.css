@@ -539,7 +539,19 @@ img {
   margin-bottom: 0;
 }
 
-/* *************** For Tablets *************** */ 
+/* *************** For Tablets *************** */
+
+@media (orientation: landscape) {
+  .header,
+  .footer {
+    height: auto;
+  }
+
+  .header:before {
+    background-position: center top;
+    background-size: cover;
+  }
+} 
 
 @media (min-width: 641px) {
   .application-btns-group {
@@ -910,19 +922,6 @@ img {
 }
 
 
-@media (orientation: landscape) {
-  .header,
-  .footer {
-    height: auto;
-  }
-
-  .header:before {
-    background-position: center top;
-    background-size: cover;
-  }
-}
-
-
 @media (min-width: 641px) and (max-width: 767px) { 
   .players-section .section-list.with-background-preview:after {
     top: -105px;
@@ -1190,10 +1189,13 @@ img {
     padding-bottom: 0 !important;
   }
 
+  .section-item.with-picture-preview:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   .actions-section .section-item.with-picture-preview .section-item__preview {
-    min-width: 50vmax;
-    max-width: 50vmax;
-    margin-left: -180.5px;
+    flex-shrink: 0;
+    width: 50vmax;
     line-height: 0;
   }
 
@@ -1202,10 +1204,25 @@ img {
     margin-left: 0;
   }
 
+  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+    width: calc(6/12*100%);
+    margin-top: 20px !important;
+    padding-left: 6.3vw;
+  }
+
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
     align-self: center;
-    width: calc(5/12*100%);
     margin-left: 0;
+    margin-bottom: 71px;
+    font-size: 8rem;
+    letter-spacing: 0;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
+    padding: 25px 0 25px 5px !important;
+    font-size: 2.3rem;
+    line-height: 1.25;
+    letter-spacing: 0.16rem;
   }
 
   /* *************** Footer *************** */
@@ -1305,6 +1322,16 @@ img {
     */
   }
 
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
+    margin-left: calc(-8px - 8.5px);
+    /*8.5px = 17px/2 - half-width browser scroll*/
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
+    margin-right: calc(-15px - 8.5px);
+    /*8.5px = 17px/2 - half-width browser scroll*/
+  }
+
   .footer > .logo-btn {
     margin-left: auto;
   }
@@ -1340,6 +1367,29 @@ img {
   .players-section .section-list.with-background-preview:after {
     right: -42.9vw;
   }
+
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
+    margin-left: calc((-100vmax + 17px + 1558px)/2 - 8px - 8.5px);
+    /*8.5px = 17px/2 - half-width browser scroll*/
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
+    margin-right: calc((-100vmax + 17px + 1558px)/2 - 15px - 8.5px);
+    /*8.5px = 17px/2 - half-width browser scroll*/
+  }
+}
+
+/* *************** For Large Desktops *************** */ 
+
+@media (min-width: 1921px) {
+   
+  /* *************** Header *************** */
+  .header:before {
+    background-color: #8ca13a;
+    background-image: url('../images/img/football-801047.jpg');
+  }
+}
+
 }
 
 /* *************** For Large Desktops *************** */ 
