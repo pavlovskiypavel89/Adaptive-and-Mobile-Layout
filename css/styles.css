@@ -1066,7 +1066,6 @@ img {
   }
 
   .section-item__title {
-    max-width: 500px;
     margin-bottom: 10px;
     padding-left: 32px;
     font-size: 3.6rem;
@@ -1101,6 +1100,11 @@ img {
   .players-section .section-title {
     margin-top: 95px;
     margin-bottom: 29px;
+  }
+
+  .athlets-section .section-list.with-background-preview .section-item__title,
+  .players-section .section-list.with-background-preview .section-item__title  {
+    max-width: 500px;
   }
 
   /* *************** Athleths section only *************** */
@@ -1199,6 +1203,10 @@ img {
     line-height: 0;
   }
 
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
+    width: calc(50vw - 8.5px);
+  }
+
   .actions-section .section-item.with-picture-preview .section-item__preview .section-item__img {
     max-width: 100%;
     margin-left: 0;
@@ -1207,7 +1215,15 @@ img {
   .actions-section .section-item.with-picture-preview .section-item__preview-description {
     width: calc(6/12*100%);
     margin-top: 20px !important;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
     padding-left: 6.3vw;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
+    width: calc(6/12*100% + 8.5px);
+    padding-right: 6.3vw;
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
@@ -1328,8 +1344,7 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    margin-right: calc(-15px - 8.5px);
-    /*8.5px = 17px/2 - half-width browser scroll*/
+    margin-right: -15px;
   }
 
   .footer > .logo-btn {
@@ -1374,8 +1389,7 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    margin-right: calc((-100vmax + 17px + 1558px)/2 - 15px - 8.5px);
-    /*8.5px = 17px/2 - half-width browser scroll*/
+    margin-right: calc((-100vmax + 17px + 1558px)/2 - 15px);
   }
 }
 
