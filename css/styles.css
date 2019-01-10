@@ -1389,16 +1389,3 @@ img {
     background-image: url('../images/img/football-801047.jpg');
   }
 }
-
-}
-
-/* *************** For Large Desktops *************** */ 
-
-@media (min-width: 1921px) {
-   
-  /* *************** Header *************** */
-  .header:before {
-    background-color: #8ca13a;
-    background-image: url('../images/img/football-801047.jpg');
-  }
-}
