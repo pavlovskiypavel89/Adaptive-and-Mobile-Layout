@@ -1205,6 +1205,11 @@ img {
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
     width: calc(50vw - 8.5px);
+    overflow: hidden;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview .section-item__img {
+    max-width: calc(100% + 8.5px);
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview .section-item__img {
