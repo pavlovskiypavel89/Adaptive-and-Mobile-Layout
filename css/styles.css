@@ -836,16 +836,11 @@ img {
   .actions-section .section-item__preview-description .section-item__title:before {
     top: -149px !important;
     left: 1px !important;
-    width: 116px;
-    padding: 51px 0 65px;
-    font-size: 2.4rem;
   }
 
   .actions-section .section-item__preview-description .section-item__title:after {
     top: -79px !important;
     left: 45px !important;
-    width: 22px;
-    border-width: 2.5px;
   }
 
   .actions-section .section-item__preview-description .section-item__text {
@@ -940,6 +935,22 @@ img {
 
   .players-section .section-item.with-important-info .section-item__text {
     font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1575px) and (orientation: landscape) {
+
+/* *************** Actions section only *************** */
+
+  .actions-section .section-item__preview-description .section-item__title:before {
+    width: 116px;
+    padding: 51px 0 65px;
+    font-size: 2.4rem;
+  }
+
+  .actions-section .section-item__preview-description .section-item__title:after {
+    width: 22px;
+    border-width: 2.5px;
   }
 }
 
@@ -1139,7 +1150,7 @@ img {
     margin-bottom: 32px;
   }
 
-  .players-section  .section-list.with-background-preview:after {
+  .players-section .section-list.with-background-preview:after {
     top: -201px;
     left: 0;
     height: 100vmax;
@@ -1212,8 +1223,7 @@ img {
   .actions-section .section-item.with-picture-preview .section-item__preview-description {
     width: calc(6/12*100%);
     margin-top: 0px !important;
-    padding-top: 12.5vw;
-    padding-bottom: 6.3vw;
+    padding-bottom: 3vw;
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
@@ -1229,6 +1239,7 @@ img {
     margin-left: 0;
     margin-bottom: 0;
     font-size: 8rem;
+    line-height: 1;
     letter-spacing: 0;
   }
 
@@ -1237,14 +1248,11 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
-    top: calc(12.5vw - 28.5px);
-    width: 168px;
-    padding: 70px 0 85px;
-    font-size: 2.3rem;
+    top: calc(12.9vw - 36.5px);
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
-    top: calc(12.5vw + 84px - 24px);
+    top: calc(12.9vw + 84px - 32px);
     width: 21px;
   }
 
@@ -1267,16 +1275,16 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview.be__active .section-item__preview-description .section-item__title {
-    margin-bottom: 3.6vw;
+    margin-bottom: 4.2vw;
   }
 
   .actions-section .section-item.with-picture-preview.find__contact .section-item__preview-description .section-item__title {
-    margin-bottom: 1.45vw;
+    margin-bottom: 2vw;
   }
 
   .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__title {
     margin-left: 4px;
-    margin-bottom: 3.3vw;
+    margin-bottom: 3.8vw;
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
@@ -1397,6 +1405,10 @@ img {
     margin-right: -15px;
   }
 
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
+    padding-left: 24px;
+  }
+
   .footer > .logo-btn {
     margin-left: auto;
   }
@@ -1404,6 +1416,81 @@ img {
   .footer-offer {
     min-width: 750px;
     margin-right: auto;
+  }
+}
+
+
+@media (min-width: 961px) and (max-width: 1575px) {
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:before {
+    left: -58px;
+  }
+
+   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:after {
+    left: -14px;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:before {
+    right: -58px;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:after {
+    right: -12px;
+  }
+}
+
+
+@media (min-width: 961px) and (max-width: 1279px) {
+  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+    padding-top: 9.3vw;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
+    padding-left: 24px;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
+    font-size: calc(7.5vw - 16.53px);
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
+    font-size: calc(0.94vw + 11px);
+    padding-top: 0 !important;
+  }
+
+  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
+    padding-left: 7vw;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+    padding-top: 8.75vw;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+    top: calc(8.75vw - 18px);
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
+    top: calc(8.75vw + 50px);
+    width: 21px;
+  }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1575px) {
+
+/* *************** Actions section only *************** */
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+    padding-top: 10vw;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+    top: calc(10vw - 18px);
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
+    top: calc(10vw + 50px);
+    width: 21px;
   }
 }
 
@@ -1440,6 +1527,16 @@ img {
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
     margin-right: calc((-100vmax + 17px + 1558px)/2 - 15px);
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+    padding-top: 12.9vw;
+  }
+
+  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+    width: 168px;
+    padding: 70px 0 85px;
+    font-size: 2.3rem;
   }
 }
 
