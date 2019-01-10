@@ -1208,7 +1208,7 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview {
-    width: 50vmax;
+    width: 50vw;
     flex-shrink: 0;
     line-height: 0;
   }
