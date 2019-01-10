@@ -954,6 +954,13 @@ img {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
+    width: calc(50vw + 8.5px) !important;
+    overflow: hidden;
+  }
+}
+
 /* *************** For Desktops *************** */ 
 
 @media (min-width: 961px) {
