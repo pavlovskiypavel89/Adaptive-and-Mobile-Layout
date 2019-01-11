@@ -1222,6 +1222,7 @@ img {
   }
 
   .actions-section .section-item.with-picture-preview .section-item__preview .section-item__img {
+    min-width: 50vw;
     max-width: 100%;
     margin-left: 0;
   }
