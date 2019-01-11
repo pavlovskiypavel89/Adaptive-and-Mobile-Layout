@@ -53,6 +53,7 @@ ol, ul {
 }
 
 img {
+  position: relative;
   font-size: 2rem; 
   font-weight: bold; 
   text-indent: 0.5rem; 
