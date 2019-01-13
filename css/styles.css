@@ -878,25 +878,14 @@ img {
   .header {
     min-height: 960px;
     padding: 45px 0 110px;
-  }
-
-  .header:before {
-    background-image: url('../images/img/football_1920.jpg');
-    background-position: center;
-    background-size: cover;
-  }
-
-  .header:before,
-  .header:after {
-    left: 0;
-    right: 0;
+    background-image: url('../images/img/football_1920.jpg'); 
   }
 
   .logo-btn-with-text {
     max-width: 191px;
   }
 
-  .header > .logo-btn-with-text {
+  .header .logo-btn-with-text {
     margin-bottom: 289px;
   }
 
@@ -1215,27 +1204,19 @@ img {
   /* *************** Footer *************** */
 
   .footer {
+    min-height: 960px;
+    padding: 229px 0 52px;
+    background-image: url('../images/img/game_1920.jpg');
+  }
+
+  .footer .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 960px;
-    padding: 229px 0 52px;
+    align-items: flex-start;		  
   }
 
-  .footer:before {
-    background-image: url('../images/img/game_1920.jpg');
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .footer:before, 
-  .footer:after {
-    left: 0;
-    right: 0;
-  }
-
-  .footer > .logo-btn {
+  .footer .logo-btn {
     width: calc(2/12*100%);
     margin: 0 15px 0 54px;
   }
@@ -1272,12 +1253,12 @@ img {
     letter-spacing: 0.25px;
   }
 
-  .footer > .application-btns-group {
+  .footer .application-btns-group {
     margin-top: 151px;
     margin-bottom: 262px;
   }
 
-  .footer > .logo-btn-with-text {
+  .footer .logo-btn-with-text {
     width: 100%;
   }
 }
@@ -1406,18 +1387,6 @@ img {
 
 
 @media (min-width: 1576px) {
-  .wrapper {
-    overflow: unset;
-  }
-	
-  .header:before,
-  .footer:before, 
-  .header:after,
-  .footer:after {
-    left: calc((-100vmax + 17px + 1558px)/2);
-    width: calc(100vmax - 17px);
-  }
-
   .athlets-section .section-list.with-background-preview .section-item:before {
     right: calc((-100vmax + 17px + 1558px)/2 - 15px);
   }
