@@ -545,7 +545,7 @@ img {
   .header-offer {
     margin-bottom: calc(300/960 * 100vmax);
     margin-left: 0;
-    padding-left: 9.9vw;
+    padding-left: 6.9vw;
     padding-right: 3.125vw;
     font-size: 6.4rem;
     letter-spacing: 0.32rem;
@@ -553,7 +553,7 @@ img {
 
   .header-offer-cta {
     margin-top: 2px;
-    margin-right: -1px;
+    margin-right: -5px;
   }
 
   .application-btns-group {
@@ -772,7 +772,7 @@ img {
   /* *************** Footer *************** */
 
   .footer {
-    padding: calc(126/960 * 100vmax) 1.171875vw calc(23/960 * 100vmax); 
+    padding: calc(126/960 * 100vmax) 0 calc(23/960 * 100vmax); 
     background-image: url('../images/img/game_1280.jpg');
     background-position: center;
   }
