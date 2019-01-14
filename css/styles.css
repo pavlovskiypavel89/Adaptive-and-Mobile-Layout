@@ -372,10 +372,19 @@ img {
 
 /* *************** Actions section *************** */
 
-.actions-section .preview-description {
+.actions-section .container {
   position: relative;
   padding-top: 26px; 
   padding-bottom: 78px;
+}
+
+.actions-section .be__active .container {
+  padding-top: 23px;
+  padding-bottom: 77px;
+}
+
+.actions-section .work__it .container {
+  padding-bottom: 67px;
 }
 
 .actions-section .preview-title {
@@ -417,15 +426,6 @@ img {
 
 .be__active .preview-text {
   padding-right: 40px;
-}
-
-.actions-section .be__active .preview-description {
-  padding-top: 23px;
-  padding-bottom: 77px;
-}
-
-.actions-section .work__it .preview-description {
-  padding-bottom: 67px;
 }
 
 .actions-section .work__it .preview-title {
@@ -606,7 +606,8 @@ img {
 
   /* *************** Common sections *************** */
 
-  .section-title {
+  .section-title,
+  .advantage .container {
     max-width: calc(8/12*100%);
   }
 
@@ -653,21 +654,12 @@ img {
     padding-top: 32px;
   }
 
-  .athlets .container,
-  .players .container {
-    max-width: calc(8/12*100%);
-  } 
-
   /* *************** Athleths section only *************** */
 
   .athlets .section-title,
   .athlets .advantage .container {
     margin-left: auto;
     margin-right: 0;
-  }
-  
-  .athlets .section-title,
-  .athlets .advantage .container {
     padding-left: 4.7vw;
   }
 
@@ -708,6 +700,11 @@ img {
     padding-top: 31px; 
   }
 
+  .players .advantage.with-important-info {
+    padding-top: 31px;
+    padding-bottom: 34px;
+  }
+
   .players .advantage .container {
     margin-left: 0;
     padding-right: 4.7vw;
@@ -715,11 +712,6 @@ img {
 
   .players .advantage:first-child .advantage-text {
     padding-right: 31px; 
-  }
-
-  .players .advantage.with-important-info {
-    padding-top: 31px;
-    padding-bottom: 34px;
   }
 
   .players .advantage.with-important-info .advantage-text {
@@ -730,17 +722,17 @@ img {
 
   /* *************** Actions section *************** */
 
-  .actions-section .be__active .preview-description {
+  .actions-section .be__active .container {
     padding-top: 66px;
     padding-bottom: 99px;
   }
 
-  .actions-section .find__contact .preview-description {
+  .actions-section .find__contact .container {
     padding-top: 56px;
     padding-bottom: 106px;
   }
 
-  .actions-section .work__it .preview-description {
+  .actions-section .work__it .container {
     padding-top: 57px;
     padding-bottom: 112px; 
   }
