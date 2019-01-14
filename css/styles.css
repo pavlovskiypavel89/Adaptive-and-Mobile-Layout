@@ -887,16 +887,13 @@ img {
     background-image: url('../images/img/football_1920.jpg'); 
   }
 
-  .logo-btn-with-text picture {
-    margin-left: 18px;
-  }
-
-  .surface-logo-icon-with-text {
-    max-width: 191px;
-  }
-
   .header .logo-btn-with-text {
+    max-width: 191px;
     margin-bottom: 289px;
+  }
+	
+  .logo-btn-with-text picture {
+    margin-left: 11px;
   }
 
   .header-offer {
