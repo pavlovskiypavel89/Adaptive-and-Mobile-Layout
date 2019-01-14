@@ -875,7 +875,8 @@ img {
 @media (min-width: 961px) {
   .container {
     max-width: 1558px;
-    padding: 0;
+    padding-left: 11px;
+    padding-right: 15px;
   }
    
   /* *************** Header *************** */
@@ -886,7 +887,11 @@ img {
     background-image: url('../images/img/football_1920.jpg'); 
   }
 
-  .logo-btn-with-text {
+  .logo-btn-with-text picture {
+    margin-left: 18px;
+  }
+
+  .surface-logo-icon-with-text {
     max-width: 191px;
   }
 
@@ -897,8 +902,9 @@ img {
   .header-offer {
     font-size: 9rem;
     margin-left: 0;
+    margin-right: -15px;
     margin-bottom: 208px;
-    padding-left: 4px;
+    padding-left: 2px;
     line-height: 0.8;
     letter-spacing: 0.44rem;
   }
@@ -906,13 +912,12 @@ img {
   .header-offer-cta {
     width: calc(9/12*100%);
     margin-top: 8px;
-    padding-left: 63px;
-    padding-right: 11px;
+    padding-left: 65px;
     line-height: 1.1111;
   }
 
   .application-btns-group {
-    padding-left: 8px;
+    padding-left: 30px;
     padding-right: 15px;
   }
 
