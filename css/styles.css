@@ -583,7 +583,8 @@ img {
 
   .application-btn-brand {
     padding-right: 8vw;
-    word-spacing: 0.25rem;
+    letter-spacing: 0.06rem;  
+    word-spacing: 0.2rem;
   }
 
   /* *************** Common sections *************** */
