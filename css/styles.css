@@ -59,12 +59,20 @@ img {
 
 /* *************** Mobile first *************** */ 
 
-.wrapper {
-  max-width: 1558px;
+.wrapper,
+.container {
+  position: relative;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 6.25vw;
-  /*overflow: hidden;*/
+}
+
+.wrapper {
+  max-width: 1558px;
+}
+
+.container {
+  max-width: 640px;
 }
 
 /* *************** Header *************** */ 
@@ -366,7 +374,8 @@ img {
 
 .actions-section .preview-description {
   position: relative;
-  padding: 26px 20px 78px;
+  padding-top: 26px; 
+  padding-bottom: 78px;
 }
 
 .actions-section .preview-title {
@@ -406,8 +415,13 @@ img {
   font-size: 1.6rem;
 }
 
+.be__active .preview-text {
+  padding-right: 40px;
+}
+
 .actions-section .be__active .preview-description {
-  padding: 23px 60px 77px 20px;
+  padding-top: 23px;
+  padding-bottom: 77px;
 }
 
 .actions-section .work__it .preview-description {
@@ -504,14 +518,19 @@ img {
 
 @media (min-width: 641px) and (max-width: 960px) {
   .wrapper {
-    padding-left: 2.995vw;
-    padding-right: 3.125vw;
+    padding: 0 1.171875vw;
   }
+
+  .container {
+    max-width: 960px;
+    padding-left: calc(2.995vw + 1.171875vw);
+    padding-right: calc(3.125vw + 1.171875vw);
+  }   
    
   /* *************** Header *************** */
 
   .header {
-    padding: calc(39/960 * 100vmax) 1.171875vw calc(91/960 * 100vmax);
+    padding: calc(39/960 * 100vmax) 0 calc(91/960 * 100vmax);
     background-image: url('../images/img/football_1280.jpg');
   }
 
@@ -526,7 +545,8 @@ img {
   .header-offer {
     margin-bottom: calc(300/960 * 100vmax);
     margin-left: 0;
-    padding-left: 6.9vw;
+    padding-left: 9.9vw;
+    padding-right: 3.125vw;
     font-size: 6.4rem;
     letter-spacing: 0.32rem;
   }
@@ -552,7 +572,7 @@ img {
   
   .application-btn-link {
     padding-top: 20px;
-    padding-bottom: 18px !important;
+    padding-bottom: 18px;
     font-size: 1.4rem;
   }
 
@@ -580,15 +600,14 @@ img {
   }
 
   .application-btn-brand {
+    padding-right: 8vw;
     word-spacing: 1px;
   }
 
   /* *************** Common sections *************** */
 
-  .advantages-section .section-title,
-  .actions-section .preview .preview-description {
-    padding-left: calc(2.995vw + 1.171875vw);
-    padding-right: calc(3.125vw + 1.171875vw);
+  .section-title {
+    max-width: calc(8/12*100%);
   }
 
   .advantage-title {
@@ -619,25 +638,37 @@ img {
   }
 
   /* *************** Athleths & Players section *************** */
-
+  
   .advantages-section .section-title {
-    width: calc(6/12*100% + 12vw + 4.166875vw);
     margin-top: 65px;
     margin-bottom: 0;
+    padding-right: calc(3.125vw + 1.171875vw);
   }
 
   .advantages-section .advantage {
-    padding: 0 1.171875vw 32px;
+    padding-bottom: 32px;
   }
 
   .advantages-section .advantage:first-child {
     padding-top: 32px;
   }
 
+  .athlets .container,
+  .players .container {
+    max-width: calc(8/12*100%);
+  } 
+
   /* *************** Athleths section only *************** */
 
-  .athlets .section-title {
-    margin-left: auto; 
+  .athlets .section-title,
+  .athlets .advantage .container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .athlets .section-title,
+  .athlets .advantage .container {
+    padding-left: 4.7vw;
   }
 
   .athlets .advantages:after {
@@ -650,11 +681,6 @@ img {
     background-position: right top;
   }
 
-  .athlets .wrapper {
-    width: calc(6/12*100% + 12vw + 2.995vw);
-    margin-right: 0;
-  }
-
   .athlets .advantage {
     padding-top: 29px; 
   }
@@ -665,6 +691,10 @@ img {
 
   /* *************** Players section only *************** */
 
+   .players .section-title {
+    padding-left: 4.1vw;
+  }
+
   .players .advantages:after {
     top: -122px;
     right: 0;
@@ -674,13 +704,13 @@ img {
     background-position: right top;
   }
 
-  .players .wrapper {
-    width: calc(6/12*100% + 12vw + 3.125vw);
-    margin-left: 0;
-  }
-
   .players .advantage {
     padding-top: 31px; 
+  }
+
+  .players .advantage .container {
+    margin-left: 0;
+    padding-right: 4.7vw;
   }
 
   .players .advantage:first-child .advantage-text {
@@ -703,7 +733,6 @@ img {
   .actions-section .be__active .preview-description {
     padding-top: 66px;
     padding-bottom: 99px;
-
   }
 
   .actions-section .find__contact .preview-description {
@@ -724,7 +753,7 @@ img {
   }
 
   .actions-section .preview-title:before {
-    top: -93px;
+    top: -92px;
     left: 33px;
   }
 
