@@ -511,8 +511,8 @@ img {
 @media (min-width: 641px) and (max-width: 960px) {
   .container {
     max-width: 960px;
-    padding-left: calc(2.995vw + 1.171875vw);
-    padding-right: calc(3.125vw + 1.171875vw);
+    padding-left: 4.1666vw;
+    padding-right: 4.2968vw;
   }   
    
   /* *************** Header *************** */
@@ -534,14 +534,13 @@ img {
     margin-bottom: calc(300/960 * 100vmax);
     margin-left: 0;
     padding-left: 6.9vw;
-    padding-right: 3.125vw;
     font-size: 6.4rem;
     letter-spacing: 0.32rem;
   }
 
   .header-offer-cta {
     margin-top: 2px;
-    margin-right: -5px;
+    margin-right: -1px;
   }
 
   .application-btn:nth-child(odd) {
@@ -576,7 +575,6 @@ img {
 
   .application-btn-cta {
     line-height: 1.15;
-    letter-spacing: 0.045rem;
   }
   
   .application-btn__googleplay .application-btn-cta {
@@ -585,7 +583,7 @@ img {
 
   .application-btn-brand {
     padding-right: 8vw;
-    word-spacing: 1px;
+    word-spacing: 0.25rem;
   }
 
   /* *************** Common sections *************** */
@@ -627,7 +625,7 @@ img {
   .advantages-section .section-title {
     margin-top: 65px;
     margin-bottom: 0;
-    padding-right: calc(3.125vw + 1.171875vw);
+    padding-right: 4.2968vw;
   }
 
   .advantages-section .advantage {
@@ -791,7 +789,7 @@ img {
     margin-bottom: calc(273/960 * 100vmax);
     font-size: 3.6rem;
     line-height: 1.6666666;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.025rem;
   }
 
   .footer .application-btns-group {
