@@ -544,10 +544,6 @@ img {
     margin-right: -5px;
   }
 
-  .application-btns-group {
-    padding: 0 3.125vw;
-  }
-
   .application-btn:nth-child(odd) {
     margin-left: auto;
     margin-right: 15px;
