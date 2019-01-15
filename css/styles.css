@@ -384,7 +384,7 @@ img {
 .actions-section .preview-title:before {
   position: absolute;
   top: -61px;
-  left: 20px;
+  left: 6.25vw;
   display: flex;
   justify-content: center;
   width: 70px;
@@ -397,7 +397,7 @@ img {
 
 .actions-section .preview-title:after {
   top: -18px;
-  left: 46px;
+  left: calc(6.25vw + 26px);
   border-color: white; 
   background-color: white;
   opacity: 0.3;
