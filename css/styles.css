@@ -678,16 +678,6 @@ img {
     right: calc(50% + 12vw + 2.995vw - 66px);
   }
 
-  /*.athlets .advantages:after {
-    top: -67px;
-    left: 0;
-    right: calc(50% + 12vw + 2.995vw - 66px);
-    height: 100vmax;
-    background-image: url('../images/img/footballer_497.png');
-    background-size: 497px auto;
-    background-position: right top;
-  }*/
-
   .athlets .advantage {
     padding-top: 29px; 
   }
@@ -706,15 +696,6 @@ img {
     top: -26px;
     right: 0;
   }
-
-  /*.players .advantages:after {
-    top: -122px;
-    right: 0;
-    height: 100vmax;
-    background-image: url('../images/img/basketballer_436.png');
-    background-size: 436px auto;
-    background-position: right top;
-  }*/
 
   .players .advantage {
     padding-top: 31px; 
