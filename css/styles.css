@@ -845,10 +845,235 @@ img {
   }
 }
 
-/* ***********Insert here right-code for desktops vesrion*********** */
+/* *************** For Desktops *************** */ 
 
+@media (min-width: 961px) {
+  .container {
+    max-width: 1558px;
+    padding-left: 11px;
+    padding-right: 15px;
+  }
+   
+  /* *************** Header *************** */
 
+  .header {
+    min-height: 960px;
+    padding: 45px 0 110px;
+    background-image: url('../images/img/football_1920.jpg'); 
+  }
 
+  .logo-btn-with-text {
+    max-width: 191px;
+  }
+
+  .header .logo-btn-with-text {
+    margin-bottom: 289px;
+  }
+	
+  .logo-btn-with-text picture {
+    margin-left: 11px;
+  }
+
+  .header-offer {
+    font-size: 9rem;
+    margin-left: 0;
+    margin-right: -15px;
+    margin-bottom: 208px;
+    padding-left: 2px;
+    line-height: 0.8;
+    letter-spacing: 0.44rem;
+  }
+
+  .header-offer-cta {
+    width: calc(9/12*100%);
+    margin-top: 8px;
+    padding-left: 65px;
+    line-height: 1.1111;
+  }
+
+  .application-btns-group {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+
+  .application-btn:nth-child(odd) {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+
+  .application-btn:nth-child(even) {
+    margin-left: 22px;
+    margin-right: auto;
+  }
+  
+  .application-btn-link {
+    line-height: 1.5;
+    letter-spacing: 0.07rem;
+  }
+
+  .application-btn__appstore .application-btn-link {
+    padding: 18px 0 17px;
+  }
+
+  .application-btn__googleplay .application-btn-link {
+    padding: 14px 0;
+  }
+
+  .appstore-icon {
+    width: 48px;
+    margin: -7px 21px 0 35px;
+  }
+
+  .googleplay-icon {
+    width: 50px;
+    margin: 0 24px -1px 52px;
+    transform: scale(0.9, 1);
+  }
+
+  .application-btn-brand {
+    margin-top: -3px;
+  }
+
+  /* *************** Common sections *************** */
+  
+  .section-title,
+  .advantage .container {
+    max-width: 779px;
+    width: calc(6/12*100%);
+  }
+
+  .section-title {
+    font-size: 8rem;
+  }
+
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  .advantage-title {
+    margin-bottom: 11px;
+    padding-left: 32px;
+    font-size: 3.6rem;
+    letter-spacing: 0.18rem;
+  }
+
+  .advantage-title:before {
+    top: 8px;
+    left: 0;
+    font-size: 2rem;
+  }
+
+  .advantage-title:after { 
+    top: 34px;
+    left: 1px;
+    width: 17px;
+    border-width: 2.5px;
+    border-radius: 2.5px;
+  }
+
+  .advantage-text {
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+    word-spacing: 0;
+  }
+
+  /* *************** Athleths & Players section *************** */
+
+  .advantages-section .section-title {
+    margin-top: 95px;
+    margin-bottom: 5px;
+  }
+
+  .advantages-section .advantage-title {
+    max-width: 500px;
+  }
+
+  /* *************** Athleths section only *************** */
+
+  .athlets .section-title,
+  .athlets .advantage .container {
+    margin-left: calc(50vw - 8.5px);
+    padding-left: 55px;
+    padding-right: 14px;
+  }
+
+  .athlets .advantages-picture {
+    text-align: left;
+  }
+
+  .athlets .advantages-img {
+    top: -68px;
+    left: calc(50vw - 568px);
+    bottom: 0;
+  }
+
+  .athlets .advantage.with-important-info .advantage-text {
+    margin-right: -4px;
+  }
+
+  /* *************** Players section only *************** */
+
+  /* *************** Footer *************** */
+
+  .footer {
+    min-height: 960px;
+    padding: 229px 0 52px;
+    background-image: url('../images/img/game_1920.jpg');
+  }
+
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;		  
+  }
+
+  .logo-btn {
+    max-width: 130px;
+    width: calc(2/12*100%);
+    margin: 0 15px 0 64px;
+    padding: 20px 14px 23px;
+    border-radius: 30px;
+  }
+
+  .logo-btn:active {
+    box-shadow: inset 10px 10px 20px -6px rgba(0, 0, 0, 0.6);
+  }
+
+  .surface-logo-icon {
+    transform: scale(1, 0.91);
+  }
+
+  .footer-offer-cta {
+    margin-bottom: 6px;
+    font-size: 8rem;
+    line-height: 1;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .footer-offer {
+    width: calc(6/12*100%);
+    margin: 9px 0 0;
+    padding: 0 19px;
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1.15;
+    letter-spacing: 0.25px;
+  }
+
+  .footer .application-btns-group {
+    width: 100%;
+    margin-top: 151px;
+    margin-bottom: 262px;
+  }
+
+  .footer .logo-btn-with-text {
+    width: 100%;
+  }
+}
 
 /* *************** For Large Desktops *************** */ 
 
@@ -866,7 +1091,7 @@ img {
 
 
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Not RE-WORKED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HERE NOT RE-WORKED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /* *************** For iPad & iPad Pro *************** */ 
 
