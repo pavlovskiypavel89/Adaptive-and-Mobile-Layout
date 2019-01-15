@@ -49,7 +49,13 @@
   </header>
   <main>
     <section class="advantages-section athlets">
-      <h2 class="section-title">Athlets</h2>  
+      <h2 class="section-title">Athlets</h2>
+      <picture class="advantages-picture">
+        <source srcset="images/img/footballer_192.png" media="(max-width: 640px)">
+        <source srcset="images/img/footballer_497.png" media="(min-width: 641px) and (max-width: 960px)">
+        <source srcset="images/img/footballer_566.png" media="(min-width: 961px)">
+        <img src="images/img/footballer_566.png" class="advantages-img" onerror="event.target.style='padding-bottom: 45px;'" alt="Footballer image">	
+      </picture>  
       <ol class="section-list advantages">
         <li class="section-item advantage">
           <div class="container">
@@ -73,6 +79,12 @@
     </section>
     <section class="advantages-section players">
        <h2 class="section-title">Players</h2>
+       <picture class="advantages-picture">
+         <source srcset="images/img/basketballer_302.png" media="(max-width: 640px)">
+         <source srcset="images/img/basketballer_436.png" media="(min-width: 641px) and (max-width: 960px)">
+         <source srcset="images/img/basketballer_991.png" media="(min-width: 961px)">
+         <img src="images/img/basketballer_991.png" class="advantages-img" alt="Basketballer image">	
+       </picture> 
        <ol class="section-list advantages">
          <li class="section-item advantage">
            <div class="container">
@@ -102,7 +114,7 @@
              <source srcset="./images/img/be-active.jpg" media="(min-width: 641px) and (max-width: 768px)">    
              <source srcset="./images/img/be-active_960.jpg" media="(min-width: 769px) and (max-width: 1920px)">
              <source srcset="./images/img/be-active_1024.jpg" media="(min-width: 1921px)">
-             <img class="preview-img" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" src="./images/img/be-active_1024.jpg" alt="Be active image">
+             <img src="./images/img/be-active_1024.jpg" class="preview-img" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" alt="Be active image">
            </picture>
            <div class="container">
              <h3 class="preview-title">Be active</h3>
@@ -115,7 +127,7 @@
              <source srcset="./images/img/find-contact.jpg" media="(min-width: 641px) and (max-width: 768px)">
              <source srcset="./images/img/find-contact_960.jpg" media="(min-width: 769px) and (max-width: 1920px)">    
              <source srcset="./images/img/find-contact_1024.jpg" media="(min-width: 1921px)">
-             <img class="preview-img" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" src="./images/img/find-contact_1024.jpg" alt="Find contact image">
+             <img src="./images/img/find-contact_1024.jpg" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" class="preview-img" alt="Find contact image">
            </picture>
            <div class="container">
              <h3 class="preview-title">Find contact</h3>
@@ -128,7 +140,7 @@
              <source srcset="./images/img/work-it.jpg" media="(min-width: 641px) and (max-width: 768px)">
              <source srcset="./images/img/work-it_960.jpg" media="(min-width: 769px) and (max-width: 1920px)">    
              <source srcset="./images/img/work-it_1024.jpg" media="(min-width: 1921px)">
-             <img class="preview-img" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" src="./images/img/work-it_1024.jpg" alt="Work it image">
+             <img src="./images/img/work-it_1024.jpg" onerror="event.target.style='top: 25%; left: 25%; z-index: 10;'" class="preview-img" alt="Work it image">
            </picture>
            <div class="container">
              <h3 class="preview-title">Work it</h3>
