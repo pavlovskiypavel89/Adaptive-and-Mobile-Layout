@@ -120,10 +120,6 @@ img {
   box-shadow: inset 8px 8px 18px -6px rgba(0, 0, 0, 0.6);
 }
 
-.surface-logo-icon-with-text {
-  max-width: 100%;
-}
-
 .header-offer {
   position: relative;
   margin-left: -2px;
@@ -216,19 +212,15 @@ img {
   padding: 0 6.25vw;
   font-size: 5rem;
   line-height: 1.2;
+  color: #e7e7e7; 
 }
 
-.section-item {
-  position: relative;
-  counter-increment: item;
-}
-
-.advantage-img {
+.advantages-img {
   z-index: 1;
 }
 
-.advantages {
-  position: relative;
+.section-item {
+  counter-increment: item;
 }
 
 .advantage-title,
@@ -271,14 +263,9 @@ img {
 
 /* *************** Athleths & Players section *************** */
 
-.advantages-section .section-title {
-  color: #e7e7e7; 
-}
-
-.advantages-section > picture {
+.advantages-picture {
   position: relative;
   display: block;
-  text-align: center;
   z-index: 1;
 }
 
@@ -320,17 +307,17 @@ img {
 
 /* *************** Athleths section only *************** */
 
-.athlets .advantages {
-  margin-top: -49px;
-}
-
 .athlets .section-title {
   margin-top: 12px;
 }
 
-.athlets > picture {
+.athlets .advantages-img {
   bottom: -8px;
-  padding-left: 9px;
+  margin-left: calc(50% - 90px);
+}
+
+.athlets .advantages {
+  margin-top: -49px;
 }
 
 .athlets .advantage.with-important-info {
@@ -340,17 +327,18 @@ img {
 
 /* *************** Players section only *************** */
 
-.players .advantages {
-  margin-top: -16px;
-}
-
 .players .section-title {
   margin-top: 9px;
   margin-left: -4px; 
 }
 
-.players > picture {
+.players .advantages-img {
   bottom: -11px;
+  margin-left: calc(50% - 151px);
+}
+
+.players .advantages {
+  margin-top: -16px;
 }
 
 .players .advantage {
@@ -369,7 +357,6 @@ img {
 /* *************** Actions section *************** */
 
 .actions-section .container {
-  position: relative;
   padding-top: 26px; 
   padding-bottom: 78px;
 }
@@ -420,7 +407,7 @@ img {
   font-size: 1.6rem;
 }
 
-.be__active .preview-text {
+.actions-section .be__active .preview-text {
   padding-right: 40px;
 }
 
@@ -453,7 +440,6 @@ img {
 }
 
 .surface-logo-icon {
-  max-width: 100%;
   transform: scale(1.295, 1.165);
 }
 
@@ -502,8 +488,7 @@ img {
 
   /* *************** Athleths & Players section *************** */
 
-  .athlets .advantages,
-  .players .advantages {
+  .advantages-section .advantages {
     margin-top: 0;
   }
 
@@ -636,8 +621,7 @@ img {
 
   /* *************** Athleths & Players section *************** */
 
-  .athlets > picture,
-  .players > picture {
+  .advantages-picture {
     position: absolute;
     top: 0;
     left: 0;
@@ -648,12 +632,7 @@ img {
 
   .advantages-section .section-title {
     margin-top: 65px;
-    margin-bottom: 0;
     padding-right: 4.2968vw;
-  }
-
-  .advantages-section .advantage-img {
-
   }
 
   .advantages-section .advantage {
@@ -673,9 +652,10 @@ img {
     padding-left: 4.7vw;
   }
 
-  .athlets .advantage-img {
+  .athlets .advantages-img {
     top: 29px;
     right: calc(50% + 12vw + 2.995vw - 66px);
+    margin-left: 0;
   }
 
   .athlets .advantage {
@@ -688,13 +668,14 @@ img {
 
   /* *************** Players section only *************** */
 
-   .players .section-title {
+  .players .section-title {
     padding-left: 4.1vw;
   }
 
-  .players .advantage-img {
+  .players .advantages-img {
     top: -26px;
     right: 0;
+    margin-left: 0;
   }
 
   .players .advantage {
@@ -822,7 +803,7 @@ img {
     overflow: hidden;
   }
 
-  .players .advantage-img {
+  .players .advantages-img {
     top: 40px;
     right: calc(26.2vw - 234px);
     /*
