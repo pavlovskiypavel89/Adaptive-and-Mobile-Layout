@@ -51,6 +51,7 @@ ol, ul {
 
 img {
   position: relative;
+  max-width: 100%;
   font-size: 2rem; 
   font-weight: bold; 
   text-indent: 0.5rem; 
@@ -222,8 +223,12 @@ img {
   counter-increment: item;
 }
 
-.preview-img {
-  max-width: 100%;
+.advantage-img {
+  z-index: 1;
+}
+
+.advantages {
+  position: relative;
 }
 
 .advantage-title,
@@ -267,12 +272,14 @@ img {
 /* *************** Athleths & Players section *************** */
 
 .advantages-section .section-title {
-  margin-bottom: 234px;
   color: #e7e7e7; 
 }
 
-.advantages {
+.advantages-section > picture {
   position: relative;
+  display: block;
+  text-align: center;
+  z-index: 1;
 }
 
 .advantage {
@@ -280,7 +287,7 @@ img {
 }
 
 .advantage:first-child {
-  padding-top: 75px;
+  padding-top: 74px;
   background-color: #fafafa;
 }
 
@@ -313,18 +320,17 @@ img {
 
 /* *************** Athleths section only *************** */
 
+.athlets .advantages {
+  margin-top: -49px;
+}
+
 .athlets .section-title {
   margin-top: 12px;
 }
 
-.athlets .advantages:after {
-  content: '';
-  position: absolute;
-  top: -226px;
-  left: 12px;
-  right: 0;
-  bottom: 92.2%;
-  background: url('../images/img/footballer_192.png') no-repeat center / contain;
+.athlets > picture {
+  bottom: -8px;
+  padding-left: 9px;
 }
 
 .athlets .advantage.with-important-info {
@@ -334,19 +340,17 @@ img {
 
 /* *************** Players section only *************** */
 
+.players .advantages {
+  margin-top: -16px;
+}
+
 .players .section-title {
   margin-top: 9px;
   margin-left: -4px; 
 }
 
-.players .advantages:after {
-  content: '';
-  position: absolute;
-  top: -223px;
-  left: 0;
-  right: 0;
-  bottom: 96%;
-  background: url('../images/img/basketballer_302.png') no-repeat center top / contain;
+.players > picture {
+  bottom: -11px;
 }
 
 .players .advantage {
@@ -498,6 +502,11 @@ img {
 
   /* *************** Athleths & Players section *************** */
 
+  .athlets .advantages,
+  .players .advantages {
+    margin-top: 0;
+  }
+
   .advantages-section .section-title {
     font-size: 8rem;
   }
@@ -589,6 +598,10 @@ img {
 
   /* *************** Common sections *************** */
 
+  .advantages-section {
+    position: relative;
+  }
+
   .section-title,
   .advantage .container {
     max-width: calc(8/12*100%);
@@ -622,11 +635,25 @@ img {
   }
 
   /* *************** Athleths & Players section *************** */
-  
+
+  .athlets > picture,
+  .players > picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+  }
+
   .advantages-section .section-title {
     margin-top: 65px;
     margin-bottom: 0;
     padding-right: 4.2968vw;
+  }
+
+  .advantages-section .advantage-img {
+
   }
 
   .advantages-section .advantage {
@@ -646,7 +673,12 @@ img {
     padding-left: 4.7vw;
   }
 
-  .athlets .advantages:after {
+  .athlets .advantage-img {
+    top: 29px;
+    right: calc(50% + 12vw + 2.995vw - 66px);
+  }
+
+  /*.athlets .advantages:after {
     top: -67px;
     left: 0;
     right: calc(50% + 12vw + 2.995vw - 66px);
@@ -654,7 +686,7 @@ img {
     background-image: url('../images/img/footballer_497.png');
     background-size: 497px auto;
     background-position: right top;
-  }
+  }*/
 
   .athlets .advantage {
     padding-top: 29px; 
@@ -670,14 +702,19 @@ img {
     padding-left: 4.1vw;
   }
 
-  .players .advantages:after {
+  .players .advantage-img {
+    top: -26px;
+    right: 0;
+  }
+
+  /*.players .advantages:after {
     top: -122px;
     right: 0;
     height: 100vmax;
     background-image: url('../images/img/basketballer_436.png');
     background-size: 436px auto;
     background-position: right top;
-  }
+  }*/
 
   .players .advantage {
     padding-top: 31px; 
@@ -804,8 +841,8 @@ img {
     overflow: hidden;
   }
 
-  .players .advantages:after {
-    top: -105px;
+  .players .advantage-img {
+    top: 40px;
     right: calc(26.2vw - 234px);
     /*
       min right coord = -66px - for 641px min-width  
@@ -816,7 +853,7 @@ img {
       a = 26.19vw, k = -233.88px.
     */
       
-    background-size: 392px auto;
+    max-width: 66.67%;
   }
 }
 
@@ -837,7 +874,7 @@ img {
   }
 }
 
-/* ***********Insert here code for desktops vesrion*********** */
+/* ***********Insert here right-code for desktops vesrion*********** */
 
 
 
