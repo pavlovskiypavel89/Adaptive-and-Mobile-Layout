@@ -179,10 +179,6 @@ img {
   margin: 0 6px 0 81px;
 }
 
-.application-btn__googleplay .application-btn-cta {
-  margin-top: -2px;
-}
-
 .application-btn-brand {
   display: block;
   font-weight: bold;
@@ -486,7 +482,15 @@ img {
     border-radius: 38px;
   }
 
+  .application-btn .application-btn-link {
+    font-size: 1.4rem;
+  }
+
   /* *************** Athleths & Players section *************** */
+
+  .advantages-section {
+    position: relative;
+  }
 
   .advantages-section .advantages {
     margin-top: 0;
@@ -496,8 +500,33 @@ img {
     font-size: 8rem;
   }
 
-  .advantage:first-child {
+  .advantages-section .advantages-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+  }
+
+  .advantages-section .advantages-img {
+    margin-left: 0;
+  }
+
+  .advantages-section .advantage:first-child {
     background-color: transparent;
+  }
+
+
+  /* *********************************** */
+  .athlets .section-title,
+  .athlets .advantage .container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .players .advantage .container {
+    margin-left: 0;
   }
 }
 
@@ -550,7 +579,6 @@ img {
   .application-btn .application-btn-link {
     padding-top: 20px;
     padding-bottom: 18px;
-    font-size: 1.4rem;
   }
 
   .application-btn__googleplay .application-btn-link {
@@ -568,28 +596,21 @@ img {
   }
 
   .application-btn-cta {
+    margin-top: -2px;
     line-height: 1.15;
-  }
-  
-  .application-btn__googleplay .application-btn-cta {
-    margin-top: -3px;
   }
 
   .application-btn-brand {
     padding-right: 8vw;
-    letter-spacing: 0.06rem;  
-    word-spacing: 0.2rem;
+    letter-spacing: 0.08rem;  
+    word-spacing: 0;
   }
 
   /* *************** Common sections *************** */
 
-  .advantages-section {
-    position: relative;
-  }
-
   .section-title,
   .advantage .container {
-    max-width: calc(8/12*100%);
+    width: calc(8/12*100%);
   }
 
   .advantage-title {
@@ -621,15 +642,6 @@ img {
 
   /* *************** Athleths & Players section *************** */
 
-  .advantages-picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: right;
-  }
-
   .advantages-section .section-title {
     margin-top: 65px;
     padding-right: 4.2968vw;
@@ -647,8 +659,6 @@ img {
 
   .athlets .section-title,
   .athlets .advantage .container {
-    margin-left: auto;
-    margin-right: 0;
     padding-left: 4.7vw;
   }
 
@@ -688,7 +698,6 @@ img {
   }
 
   .players .advantage .container {
-    margin-left: 0;
     padding-right: 4.7vw;
   }
 
@@ -728,12 +737,12 @@ img {
 
   .actions-section .preview-title:before {
     top: -92px;
-    left: 4.1666vw;
+    left: 4.2968vw;
   }
 
   .actions-section .preview-title:after {
     top: -23px;
-    left: calc(4.1666vw + 44px);
+    left: calc(4.2968vw + 43px);
   }
 
   .actions-section .be__active .preview-title:before {
@@ -861,13 +870,13 @@ img {
 
 /* *************** For iPad & iPad Pro *************** */ 
 
-@media (min-width: 1024px) and (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
+/*@media (min-width: 1024px) and (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
 (min-width: 1366px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
 (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
     width: calc(50vw + 8.5px) !important;
   } 
-}
+}*/
 
 /* *************** For Desktops *************** */ 
 
@@ -886,8 +895,11 @@ img {
     background-image: url('../images/img/football_1920.jpg'); 
   }
 
-  .header .logo-btn-with-text {
+  .logo-btn-with-text {
     max-width: 191px;
+  }
+
+  .header .logo-btn-with-text {
     margin-bottom: 289px;
   }
 	
@@ -928,17 +940,16 @@ img {
   }
   
   .application-btn-link {
-    font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 0.07rem;
   }
 
-  .application-btn__appstore > .application-btn-link {
-    padding: 18px 0 !important;
+  .application-btn__appstore .application-btn-link {
+    padding: 18px 0 17px;
   }
 
-  .application-btn__googleplay > .application-btn-link {
-    padding: 14px 0 !important;
+  .application-btn__googleplay .application-btn-link {
+    padding: 14px 0;
   }
 
   .appstore-icon {
@@ -952,44 +963,41 @@ img {
     transform: scale(0.9, 1);
   }
 
-  .application-btn-cta {
-    margin-top: 2px !important;
-  }
-
   .application-btn-brand {
-    margin-top: -4px;
+    margin-top: -3px;
   }
 
   /* *************** Common sections *************** */
-
-  main { 
-    padding-left: 8px;
-    padding-right: 15px;
+  
+  .section-title,
+  .advantage .container {
+    max-width: 779px;
+    width: calc(6/12*100%);
   }
 
   .section-title {
     font-size: 8rem;
   }
 
-  .section-list.with-background-preview .section-item {
-    padding-top: 49px !important;
-    padding-bottom: 53px;
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
-  .section-item__title {
-    margin-bottom: 10px;
+  .advantage-title {
+    margin-bottom: 11px;
     padding-left: 32px;
     font-size: 3.6rem;
     letter-spacing: 0.18rem;
   }
 
-  .section-item__title:before {
+  .advantage-title:before {
     top: 8px;
     left: 0;
     font-size: 2rem;
   }
 
-  .section-item__title:after { 
+  .advantage-title:after { 
     top: 34px;
     left: 1px;
     width: 17px;
@@ -997,106 +1005,94 @@ img {
     border-radius: 2.5px;
   }
 
-  .section-item__text {
-    position: relative;
+  .advantage-text {
     font-size: 2rem;
     line-height: 1.4;
     letter-spacing: 0.1rem;
-    word-spacing: 0.02rem;
+    word-spacing: 0;
   }
 
   /* *************** Athleths & Players section *************** */
 
-  .athlets-section .section-title,
-  .players-section .section-title {
+  .advantages-section .section-title {
     margin-top: 95px;
-    margin-bottom: 29px;
+    margin-bottom: 5px;
   }
 
-  .athlets-section .section-list.with-background-preview .section-item__title,
-  .players-section .section-list.with-background-preview .section-item__title  {
+  .advantages-section .advantage-title {
     max-width: 500px;
   }
 
   /* *************** Athleths section only *************** */
 
-  .athlets-section .section-title,
-  .athlets-section .section-list.with-background-preview {
-    width: calc(6/12*100% + 14px);
-    padding-left: 64px;
+  .athlets .section-title,
+  .athlets .advantage .container {
+    margin-left: calc(50vw - 8.5px);
+    padding-left: 55px;
+    padding-right: 14px;
   }
 
-  .athlets-section .section-list.with-background-preview:after {
-    top: -193px;
-    left: -551px;
-    right: 0;
-    height: 100vmax;
-    background-image: url('../images/img/footballer_566.png');
-    background-size: 566px auto;
-    background-position: left top;
+  .athlets .advantages-picture {
+    text-align: left;
   }
 
-  .athlets-section .section-item.with-important-info {
-    padding-bottom: 54px;
+  .athlets .advantages-img {
+    top: -68px;
+    left: calc(50vw - 568px);
+    bottom: 0;
   }
 
-  .athlets-section .section-list.with-background-preview .section-item:before {
-    left: calc((-100vmax + 17px - 1558px)/2 + 100% + 15px);
-    right: -15px;
+  .athlets .advantage.with-important-info .advantage-text {
+    margin-right: -4px;
   }
 
   /* *************** Players section only *************** */
 
-  .players-section .section-title,
-  .players-section .section-list.with-background-preview {
-    width: calc(6/12*100% + 14px);
+  .players .section-title,
+  .players .advantage .container {
+    width: calc(6/12*100%);
   }  
 
-  .players-section .section-title {
+  .players .section-title {
     margin-top: 96px;
     margin-bottom: 32px;
   }
 
-  .players-section .section-list.with-background-preview:after {
+  /*.players .section-list.with-background-preview:after {
     top: -201px;
     left: 0;
     height: 100vmax;
     background-image: url('../images/img/basketballer_991.png');
     background-size: 991px auto;
     background-position: right top;
-  }
+  }*/
 
-  .players-section .section-item {
+  .players .advantage {
     padding-top: 50px;
     padding-bottom: 53px;
   }
 
-  .players-section .section-list.with-background-preview .section-item:before {
-    left: -8px;
-    right: calc((-100vmax + 17px - 1558px)/2 + 100% + 8px);
-  }
-
-  .players-section .section-item:nth-child(2) {
+  .players .section-item:nth-child(2) {
     padding-bottom: 82px;
   }
 
-  .players-section .section-item:nth-child(2) .section-item__title {
+  .players .advantage:nth-child(2) .advantage-title {
     margin-bottom: 19px;
   } 
 
-  .players-section .section-item.with-important-info .section-item__title {
+  .players .advantage .advantage-title {
     margin-top: -1px;
     margin-bottom: 12px;
     letter-spacing: 0.15rem;
   }
   
-  .players-section .section-item.with-important-info .section-item__text {
+  .players .advantage .advantage-text {
     margin-bottom: 1px;
     letter-spacing: 0.06rem;
   }
 
   /* *************** Actions section *************** */
-
+  /*
   .section-item.with-picture-preview {
     display: flex;
     flex-wrap: nowrap;
@@ -1205,7 +1201,7 @@ img {
   .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__text {
     margin-left: -3px;
     margin-right: -5px;
-  }
+  }*/
 
   /* *************** Footer *************** */
 
@@ -1215,21 +1211,18 @@ img {
     background-image: url('../images/img/game_1920.jpg');
   }
 
-  .footer .wrapper {
+  .footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;		  
   }
 
-  .footer .logo-btn {
-    width: calc(2/12*100%);
-    margin: 0 15px 0 54px;
-  }
-
   .logo-btn {
     max-width: 130px;
-    padding: 20px 14px 23.5px;
+    width: calc(2/12*100%);
+    margin: 0 15px 0 64px;
+    padding: 20px 14px 23px;
     border-radius: 30px;
   }
 
@@ -1242,7 +1235,7 @@ img {
   }
 
   .footer-offer-cta {
-    margin: 0 0 6px -3px;
+    margin-bottom: 6px;
     font-size: 8rem;
     line-height: 1;
     word-spacing: 0.1rem;
@@ -1260,6 +1253,7 @@ img {
   }
 
   .footer .application-btns-group {
+    width: 100%;
     margin-top: 151px;
     margin-bottom: 262px;
   }
@@ -1269,7 +1263,7 @@ img {
   }
 }
 
-
+/*
 @media (min-width: 961px) and (max-width: 1575px) {
   .athlets-section .section-item {
     padding-right: 17px;
@@ -1295,10 +1289,10 @@ img {
       a = 8.632vw, k = -982px.
     */
   }
-
+  /*
   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
     margin-left: calc(-8px - 8.5px);
-    /*8.5px = 17px/2 - half-width browser scroll*/
+    *****8.5px = 17px/2 - half-width browser scroll*******
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
@@ -1376,7 +1370,7 @@ img {
 @media (min-width: 1280px) and (max-width: 1575px) {
 
 /* *************** Actions section only *************** */
-
+  /*
   .actions-section .section-item.with-picture-preview .section-item__preview-description {
     padding-top: 10vw;
   }
@@ -1407,7 +1401,7 @@ img {
 
   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
     margin-left: calc((-100vmax + 17px + 1558px)/2 - 8px - 8.5px);
-    /*8.5px = 17px/2 - half-width browser scroll*/
+    *****8.5px = 17px/2 - half-width browser scroll*********
   }
 
   .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
