@@ -728,12 +728,12 @@ img {
 
   .actions-section .preview-title:before {
     top: -92px;
-    left: 33px;
+    left: 4.1666vw;
   }
 
   .actions-section .preview-title:after {
     top: -23px;
-    left: 77px;
+    left: calc(4.1666vw + 44px);
   }
 
   .actions-section .be__active .preview-title:before {
