@@ -854,6 +854,14 @@ img {
   .actions-section .preview:nth-child(even) .preview-picture .preview-img {
     left: 0;
   } 
+
+  .actions-section .preview:nth-child(even) .preview-title:before {
+    right: -68px;
+  }
+  
+  .actions-section .preview:nth-child(even) .preview-title:after {
+    right: -22px;
+  }
 }
 
 /* *************** For Desktops *************** */ 
