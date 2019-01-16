@@ -34,11 +34,19 @@ body {
   font: normal 1rem/normal 'Open Sans', Helvetica, Arial, sans-serif;	
 }
 
+main {
+  overflow: hidden;
+}
+
 h1, h2, h3 {
   position: relative;
   font-weight: bold;
   text-transform: uppercase;
   z-index: 5;
+}
+
+p {
+  white-space: pre-wrap;
 }
 
 a {
@@ -446,6 +454,7 @@ img {
   letter-spacing: 0.1rem;
   word-spacing: -0.15rem;
   text-align: center;
+  white-space: unset;
   text-transform: uppercase;
   color: #9b8ec1;
   z-index: 1;
@@ -517,6 +526,7 @@ img {
   }
 
   /* *********************************** */
+
   .athlets .section-title,
   .athlets .advantage .container {
     margin-left: auto;
@@ -804,12 +814,7 @@ img {
   }
 }
 
-
 @media (min-width: 641px) and (max-width: 767px) { 
-  .players {
-    overflow: hidden;
-  }
-
   .players .advantages-img {
     top: 40px;
     right: calc(26.2vw - 234px);
@@ -821,11 +826,9 @@ img {
       where, a in 1vw and k in 1px.
       a = 26.19vw, k = -233.88px.
     */
-      
     max-width: 66.67%;
   }
 }
-
 
 @media (min-width: 641px) and (max-width: 1575px) {
 
@@ -843,6 +846,15 @@ img {
   }
 }
 
+/* *************** For iPad & iPad Pro *************** */ 
+
+@media (min-width: 1024px) and (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
+(min-width: 1366px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
+(min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .actions-section .preview:nth-child(even) .preview-picture .preview-img {
+    left: 0;
+  } 
+}
 
 /* *************** For Desktops *************** */ 
 
@@ -935,12 +947,9 @@ img {
 
   /* *************** Common sections *************** */
   
-  main {
-    overflow: hidden;
-  }
-  
   .section-title,
-  .advantage .container {
+  .advantage .container,
+  .preview .container {
     max-width: 779px;
     width: calc(6/12*100%);
   }
@@ -950,8 +959,8 @@ img {
   }
 
   .advantage {
-    padding-top: 49px;
-    padding-bottom: 53px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .advantage-title {
@@ -1041,15 +1050,6 @@ img {
     bottom: 0;
   }
 
-  /*.players .section-list.with-background-preview:after {
-    top: -201px;
-    left: 0;
-    height: 100vmax;
-    background-image: url('../images/img/basketballer_991.png');
-    background-size: 991px auto;
-    background-position: right top;
-  }*/
-
   .players .advantage:nth-child(2) {
     padding-bottom: 81px;
   }
@@ -1065,6 +1065,108 @@ img {
 
   .players .advantage.with-important-info .advantage-text {
     letter-spacing: 0.065rem;
+  }
+
+  /* *************** Actions section *************** */
+  
+  .actions-section .preview {
+    display: flex;
+  }
+
+  .actions-section .preview:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .actions-section .preview-picture {
+    width: 50vw;
+    flex-shrink: 0;
+    line-height: 0;
+  }
+
+  .actions-section .preview:nth-child(even) .preview-img {
+    left: 17px;
+  }
+
+  .actions-section .preview-img {
+    min-width: 50vw;
+  }
+
+  .actions-section .container {
+    padding-bottom: 3vw;
+  }
+
+  .actions-section .preview:nth-child(odd) .container {
+    margin-left: 0;
+    padding-left: 6.3vw;
+  }
+
+  .actions-section .preview:nth-child(even) .container {
+    margin-right: 0;
+    padding-right: calc(6.3vw - 17px);
+  }
+
+  .actions-section .preview:nth-child(even) .container > * {
+    margin-left: 12px;
+  }
+
+  .actions-section .preview-title {
+    margin-left: 0;
+    margin-bottom: 4.2vw;
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .actions-section .preview-title:before {
+    top: calc(12.9vw - 36.5px);
+  }
+
+  .actions-section .preview-title:after {
+    top: calc(12.9vw + 84px - 32px);
+    width: 21px;
+  }
+
+  .actions-section .preview:nth-child(odd) .preview-title:before {
+    left: -84.5px;
+  }
+
+   .actions-section .preview:nth-child(odd) .preview-title:after {
+    left: -14px;
+  }
+
+  .actions-section .preview:nth-child(even) .preview-title:before {
+    left: unset;
+    right: -100.5px;
+  }
+
+  .actions-section .preview:nth-child(even) .preview-title:after {
+    left: unset;
+    right: -28px;
+  }
+
+  .actions-section .preview.find__contact .preview-title {
+    margin-bottom: 2vw;
+  }
+
+  .actions-section .preview.work__it .container {
+    top: 2px;
+  }
+
+  .actions-section .preview.work__it .preview-title {
+    margin-left: 4px;
+    margin-bottom: 3.7vw;
+  }
+
+  .actions-section .preview .preview-text {
+    padding: 25px 5px 0;
+    font-size: 2.3rem;
+    line-height: 1.25;
+    letter-spacing: 0.18rem;
+  }
+
+  .actions-section .preview.work__it .preview-text {
+    margin-left: -1px;
+    margin-right: -12px;
   }
   
   /* *************** Footer *************** */
@@ -1128,397 +1230,31 @@ img {
 }
 
 @media (min-width: 961px) and (max-width: 1575px) {
-  .logo-btn {
-    margin-left: auto;
-  }
 
-  .footer-offer {
-    min-width: 750px;
-    margin-right: auto;
-  }
-}
+  /* *************** Actions section only *************** */
 
-
-/* *************** For Large Desktops *************** */ 
-
-@media (min-width: 1921px) {
-   
-  /* *************** Header *************** */
-  .header {
-    background-color: #8ca13a;
-    background-image: url('../images/img/football-801047.jpg');
-  }
-}
-
-
-
-
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HERE NOT RE-WORKED CODE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-/* *************** For iPad & iPad Pro *************** */ 
-
-/*@media (min-width: 1024px) and (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
-(min-width: 1366px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
-(min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    width: calc(50vw + 8.5px) !important;
-  } 
-}*/
-
-/* *************** For Desktops *************** */ 
-
-@media (min-width: 961px) {
-  .container {
-    max-width: 1558px;
-    padding-left: 11px;
-    padding-right: 15px;
-  }
-   
-  /* *************** Header *************** */
-
-  .header {
-    min-height: 960px;
-    padding: 45px 0 110px;
-    background-image: url('../images/img/football_1920.jpg'); 
-  }
-
-  .logo-btn-with-text {
-    max-width: 210px;
-  }
-
-  .header .logo-btn-with-text {
-    margin-bottom: 289px;
-  }
-	
-  .surface-logo-icon-with-text {
-    margin-left: 19px;
-  }
-
-  .header-offer {
-    font-size: 9rem;
-    margin-left: 0;
-    margin-right: -15px;
-    margin-bottom: 208px;
-    padding-left: 2px;
-    line-height: 0.8;
-    letter-spacing: 0.44rem;
-  }
-
-  .header-offer-cta {
-    width: calc(9/12*100%);
-    margin-top: 8px;
-    padding-left: 65px;
-    line-height: 1.1111;
-  }
-
-  .application-btns-group {
-    padding-left: 30px;
-    padding-right: 15px;
-  }
-
-  .application-btn:nth-child(odd) {
-    margin-left: auto;
-    margin-right: 28px;
-  }
-
-  .application-btn:nth-child(even) {
-    margin-left: 22px;
-    margin-right: auto;
+  .actions-section .preview:nth-child(even) .container {
+    padding-left: 24px;
   }
   
-  .application-btn-link {
-    line-height: 1.5;
-    letter-spacing: 0.07rem;
+  .actions-section .preview:nth-child(odd) .preview-title:before {
+    left: -58px;
   }
 
-  .application-btn__appstore .application-btn-link {
-    padding: 18px 0 17px;
-  }
-
-  .application-btn__googleplay .application-btn-link {
-    padding: 14px 0;
-  }
-
-  .appstore-icon {
-    width: 48px;
-    margin: -7px 21px 0 35px;
-  }
-
-  .googleplay-icon {
-    width: 50px;
-    margin: 0 24px -1px 52px;
-    transform: scale(0.9, 1);
-  }
-
-  .application-btn-brand {
-    margin-top: -3px;
-  }
-
-  /* *************** Common sections *************** */
-  
-  .section-title,
-  .advantage .container {
-    max-width: 779px;
-    width: calc(6/12*100%);
-  }
-
-  .section-title {
-    font-size: 8rem;
-  }
-
-  .advantage {
-    padding-top: 48px;
-    padding-bottom: 52px;
-  }
-
-  .advantage-title {
-    margin-bottom: 11px;
-    padding-left: 32px;
-    font-size: 3.6rem;
-    letter-spacing: 0.18rem;
-  }
-
-  .advantage-title:before {
-    top: 8px;
-    left: 0;
-    font-size: 2rem;
-  }
-
-  .advantage-title:after { 
-    top: 34px;
-    left: 1px;
-    width: 17px;
-    border-width: 2.5px;
-    border-radius: 2.5px;
-  }
-
-  .advantage-text {
-    font-size: 2rem;
-    line-height: 1.4;
-    letter-spacing: 0.1rem;
-    word-spacing: 0;
-  }
-
-  /* *************** Athleths & Players section *************** */
-
-
-
-  /* *************** Athleths section only *************** */
-
-  .athlets .section-title,
-  .athlets .advantage .container {
-    margin-left: calc(50vw - 8.5px);
-    padding-left: 54.5px;
-  }
-
-  .athlets .advantage.with-important-info .advantage-text {
-    margin-right: -5px;
-  }
-
-  /* *************** Players section only *************** */
-
-  
-
-  /* *************** Actions section *************** */
-  /*
-  .section-item.with-picture-preview {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 0 !important;
-  }
-  .section-item.with-picture-preview:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview {
-    width: 50vw;
-    flex-shrink: 0;
-    line-height: 0;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    width: calc(50vw - 8.5px);
-    overflow: hidden;
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview .section-item__img {
-    min-width: 50vw;
-    max-width: 100%;
-    margin-left: 0;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview .section-item__img {
-    max-width: calc(100% + 8.5px);
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description {
-    width: calc(6/12*100%);
-    margin-top: 0px !important;
-    padding-bottom: 3vw;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
-    padding-left: 6.3vw;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
-    padding-right: 6.3vw;
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
-    align-self: center;
-    margin-left: 0;
-    margin-bottom: 0;
-    font-size: 8rem;
-    line-height: 1;
-    letter-spacing: 0;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description > * {
-    margin-left: -6px;
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
-    top: calc(12.9vw - 36.5px);
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
-    top: calc(12.9vw + 84px - 32px);
-    width: 21px;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:before {
-    left: -84.5px;
-  }
-   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:after {
+  .actions-section .preview:nth-child(odd) .preview-title:after {
     left: -14px;
   }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:before {
-    left: unset;
-    right: -83.5px;
+
+  .actions-section .preview:nth-child(even) .preview-title:before {
+    right: -75px;
   }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:after {
-    left: unset;
-    right: -12px;
+
+  .actions-section .preview:nth-child(even) .preview-title:after {
+    right: -30px;
   }
-  .actions-section .section-item.with-picture-preview.be__active .section-item__preview-description .section-item__title {
-    margin-bottom: 4.2vw;
-  }
-  .actions-section .section-item.with-picture-preview.find__contact .section-item__preview-description .section-item__title {
-    margin-bottom: 2vw;
-  }
-  .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__title {
-    margin-left: 4px;
-    margin-bottom: 3.8vw;
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
-    padding: 25px 2px 0 5px !important;
-    font-size: 2.3rem;
-    line-height: 1.25;
-    letter-spacing: 0.16rem;
-  }
-  .actions-section .section-item.with-picture-preview.work__it .section-item__preview-description .section-item__text {
-    margin-left: -3px;
-    margin-right: -5px;
-  }*/
 
   /* *************** Footer *************** */
 
-  .footer {
-    min-height: 960px;
-    padding: 229px 0 52px;
-    background-image: url('../images/img/game_1920.jpg');
-  }
-
-  .footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;		  
-  }
-
-  .logo-btn {
-    max-width: 130px;
-    width: calc(2/12*100%);
-    padding: 20px 14px 23px;
-    border-radius: 30px;
-  }
-
-  .logo-btn:active {
-    box-shadow: inset 10px 10px 20px -6px rgba(0, 0, 0, 0.6);
-  }
-
-  .surface-logo-icon {
-    transform: scale(1, 0.91);
-  }
-
-  .footer-offer-cta {
-    margin-bottom: 6px;
-    font-size: 8rem;
-    line-height: 1;
-    word-spacing: 0.1rem;
-    letter-spacing: 0.4rem;
-  }
-
-  .footer-offer {
-    width: calc(6/12*100%);
-
-    padding: 0 19px;
-    text-align: left;
-    font-size: 3rem;
-    line-height: 1.15;
-    letter-spacing: 0.25px;
-  }
-
-  .footer .application-btns-group {
-    width: 100%;
-    margin-top: 151px;
-    margin-bottom: 262px;
-  }
-
-  .footer .logo-btn-with-text {
-    width: 100%;
-  }
-}
-
-/*
-@media (min-width: 961px) and (max-width: 1575px) {
-  .athlets-section .section-item {
-    padding-right: 17px;
-  }
-  .players-section .section-title {
-    margin-left: 0;
-    padding-left: 20px;
-  }
-  .players-section .section-item {
-    padding-left: 24px;
-  }
-  .players-section .section-list.with-background-preview:after {
-    right: calc(8.632vw - 982px);
-    /*
-      min right coord = -899px - for 961px min-width  
-      max right coord = -846px - for 1575px max-width;
-      -846px = a * (1575/100)px + k
-      -899px = a * (961/100)px + k;
-      where, a in 1vw and k in 1px.
-      a = 8.632vw, k = -982px.
-    */
-  }
-  /*
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
-    margin-left: calc(-8px - 8.5px);
-    *****8.5px = 17px/2 - half-width browser scroll*******
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    margin-right: -15px;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
-    padding-left: 24px;
-  }
-	
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:before {
-    left: -58px;
-  }
-   .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description .section-item__title:after {
-    left: -14px;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:before {
-    right: -58px;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description .section-item__title:after {
-    right: -12px;
-  }
   .logo-btn {
     margin-left: auto;
   }
@@ -1528,71 +1264,79 @@ img {
     margin-right: auto;
   }
 }
+
 @media (min-width: 961px) and (max-width: 1279px) {
-  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+  .actions-section .preview .container {
     padding-top: 9.3vw;
   }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview-description {
+
+  .actions-section .preview:nth-child(even) .container {
     padding-left: 24px;
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title {
+
+  .actions-section .preview .preview-title {
     font-size: calc(7.5vw - 16.53px);
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__text {
+
+  .actions-section .preview .preview-text {
     font-size: calc(0.94vw + 11px);
-    padding-top: 15px !important;
+    padding-top: 15px;
   }
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview-description {
+
+  .actions-section .preview:nth-child(odd) .container {
     padding-left: 7vw;
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+
+  .actions-section .preview .container {
     padding-top: 8.75vw;
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+
+  .actions-section .preview .preview-title:before {
     top: calc(8.75vw - 18px);
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
+
+  .actions-section .preview .preview-title:after {
     top: calc(8.75vw + 50px);
     width: 21px;
   }
 }
+
 @media (min-width: 1280px) and (max-width: 1575px) {
-/* *************** Actions section only *************** */
-  /*
-  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+  
+  /* *************** Actions section only *************** */
+  
+  .actions-section .preview .container {
     padding-top: 10vw;
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+  .actions-section .preview .preview-title:before {
     top: calc(10vw - 18px);
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:after {
+  .actions-section .preview .preview-title:after {
     top: calc(10vw + 50px);
     width: 21px;
   }
 }
+
 @media (min-width: 1576px) {
-  .athlets-section .section-list.with-background-preview .section-item:before {
-    right: calc((-100vmax + 17px + 1558px)/2 - 15px);
-  }
-  .players-section .section-list.with-background-preview .section-item:before {
-    left: calc((-100vmax + 17px + 1558px)/2 - 8px);
-  }
-  .players-section .section-list.with-background-preview:after {
-    right: -42.9vw;
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(odd) .section-item__preview {
-    margin-left: calc((-100vmax + 17px + 1558px)/2 - 8px - 8.5px);
-    *****8.5px = 17px/2 - half-width browser scroll*********
-  }
-  .actions-section .section-item.with-picture-preview:nth-child(even) .section-item__preview {
-    margin-right: calc((-100vmax + 17px + 1558px)/2 - 15px);
-  }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description {
+
+  /* *************** Actions section only *************** */
+
+  .actions-section .preview .container {
     padding-top: 12.9vw;
   }
-  .actions-section .section-item.with-picture-preview .section-item__preview-description .section-item__title:before {
+
+  .actions-section .preview-title:before {
     width: 168px;
     padding: 70px 0 85px;
     font-size: 2.3rem;
+  }
+}
+
+/* *************** For Large Desktops *************** */ 
+
+@media (min-width: 1921px) {
+  .header {
+    background-color: #8ca13a;
+    background-image: url('../images/img/football-801047.jpg');
   }
 }
