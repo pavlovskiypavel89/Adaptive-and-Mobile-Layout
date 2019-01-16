@@ -851,7 +851,7 @@ img {
   .container {
     max-width: 1558px;
     padding-left: 11px;
-    padding-right: 14px;
+    padding-right: 15px;
   }
    
   /* *************** Header *************** */
@@ -1009,7 +1009,7 @@ img {
   }
 
   .athlets .advantage.with-important-info .advantage-text {
-    margin-right: -4px;
+    margin-right: -5px;
   }
 
   /* *************** Players section only *************** */
@@ -1257,7 +1257,7 @@ img {
   }
 
   .athlets .advantage.with-important-info .advantage-text {
-    margin-right: -4px;
+    margin-right: -5px;
   }
 
   /* *************** Players section only *************** */
