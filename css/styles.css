@@ -664,7 +664,7 @@ img {
 
   .athlets .advantages-img {
     top: 29px;
-    right: calc(50% + 12vw + 2.995vw - 66px);
+    left: calc(-65vw + 66px);
     margin-left: 0;
   }
 
