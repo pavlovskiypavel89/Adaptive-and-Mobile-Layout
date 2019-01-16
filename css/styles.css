@@ -471,7 +471,6 @@ img {
 @media (min-width: 641px) {
   .application-btns-group {
     display: flex;
-    justify-content: center;
   }
 
   .application-btn {
