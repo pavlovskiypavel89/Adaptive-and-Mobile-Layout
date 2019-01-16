@@ -855,11 +855,11 @@ img {
     left: 0;
   } 
 
-  .actions-section .preview:nth-child(even) .preview-picture .preview-title:before {
+  .actions-section .preview:nth-child(even) .container .preview-title:before {
     right: -68px;
   }
   
-  .actions-section .preview:nth-child(even) .preview-picture .preview-title:after {
+  .actions-section .preview:nth-child(even) .container .preview-title:after {
     right: -22px;
   }
 }
