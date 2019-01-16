@@ -935,6 +935,10 @@ img {
 
   /* *************** Common sections *************** */
   
+  .main {
+    overflow: hidden;
+  }
+  
   .section-title,
   .advantage .container {
     max-width: 779px;
@@ -1015,10 +1019,6 @@ img {
 
   /* *************** Players section only *************** */
 
-  .players {
-    overflow: hidden;
-  }
-
   .players .section-title,
   .players .advantage .container {
     margin-left: auto;
@@ -1036,8 +1036,8 @@ img {
   }  
 
   .players .advantages-img {
-    top: 23px;
-    right: calc(50vw - 856px);
+    top: -73px;
+    right: calc(50vw - 852px);
     bottom: 0;
   }
 
