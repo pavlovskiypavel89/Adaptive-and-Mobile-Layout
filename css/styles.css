@@ -999,13 +999,10 @@ img {
     padding-right: 14px;
   }
 
-  .athlets .advantages-picture {
-    text-align: left;
-  }
-
   .athlets .advantages-img {
     top: -68px;
     left: calc(50vw - 568px);
+    right: unset;
     bottom: 0;
   }
 
@@ -1256,16 +1253,6 @@ img {
     margin-left: calc(50vw - 8.5px);
     padding-left: 55px;
     padding-right: 14px;
-  }
-
-  .athlets .advantages-picture {
-    text-align: left;
-  }
-
-  .athlets .advantages-img {
-    top: -68px;
-    left: calc(50vw - 568px);
-    bottom: 0;
   }
 
   .athlets .advantage.with-important-info .advantage-text {
