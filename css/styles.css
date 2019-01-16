@@ -856,11 +856,11 @@ img {
   } 
 
   .actions-section .preview:nth-child(even) .container .preview-title:before {
-    right: -68px;
+    right: -58px;
   }
   
   .actions-section .preview:nth-child(even) .container .preview-title:after {
-    right: -22px;
+    right: -13px;
   }
 }
 
