@@ -998,11 +998,14 @@ img {
     padding-left: 55px;
     padding-right: 14px;
   }
+	
+  .athlets .advantages-picture {
+    text-align: left;
+  }
 
   .athlets .advantages-img {
     top: -68px;
     left: calc(50vw - 568px);
-    right: unset;
     bottom: 0;
   }
 
