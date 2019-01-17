@@ -694,7 +694,7 @@ img {
   }
 
   .players .advantages-img {
-    top: -22px;
+    top: -26px;
     right: 0;
     margin-left: 0;
   }
@@ -819,7 +819,7 @@ img {
 
 @media (min-width: 641px) and (max-width: 767px) { 
   .players .advantages-img {
-    top: -40px;
+    top: -24px;
     right: calc(26.2vw - 234px);
     /*
       min right coord = -66px - for 641px min-width  
