@@ -968,6 +968,11 @@ img {
   .section-title {
     font-size: 8rem;
   }
+	
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
 
   .advantage-title {
     font-size: 3.6rem;
@@ -1008,11 +1013,6 @@ img {
     max-width: 500px;
     margin-bottom: 11px;
     padding-left: 32px;
-  }
-
-   .advantages-section .advantage {
-    padding-top: 48px;
-    padding-bottom: 52px;
   }
 
   /* *************** Athleths section only *************** */
