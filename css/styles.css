@@ -969,14 +969,7 @@ img {
     font-size: 8rem;
   }
 
-  .advantage {
-    padding-top: 48px;
-    padding-bottom: 52px;
-  }
-
   .advantage-title {
-    margin-bottom: 11px;
-    padding-left: 32px;
     font-size: 3.6rem;
     letter-spacing: 0.18rem;
   }
@@ -1013,6 +1006,13 @@ img {
 
   .advantages-section .advantage-title {
     max-width: 500px;
+    margin-bottom: 11px;
+    padding-left: 32px;
+  }
+
+   .advantages-section .advantage {
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   /* *************** Athleths section only *************** */
@@ -1277,6 +1277,9 @@ img {
 }
 
 @media (min-width: 961px) and (max-width: 1279px) {
+	  
+  /* *************** Actions section only *************** */
+  
   .actions-section .preview .container {
     padding-top: 9.3vw;
   }
@@ -1319,9 +1322,11 @@ img {
   .actions-section .preview .container {
     padding-top: 10vw;
   }
+	
   .actions-section .preview .preview-title:before {
     top: calc(10vw - 18px);
   }
+	
   .actions-section .preview .preview-title:after {
     top: calc(10vw + 50px);
     width: 21px;
