@@ -494,7 +494,7 @@ img {
     font-size: 1.4rem;
   }
 
-  /* *************** Athleths & Players section *************** */
+  /* *************** Common section *************** */
 
   .advantages-section {
     position: relative;
@@ -525,7 +525,7 @@ img {
     background-color: transparent;
   }
 
-  /* ************** Other **************** */
+  /* ************** Athleths or Players section **************** */
 
   .athlets .section-title,
   .athlets .advantage .container {
@@ -623,8 +623,6 @@ img {
 
   .advantage-title {
     max-width: 325px;
-    margin-bottom: 14px;
-    padding-left: 30px;
     font-size: 3.2rem;
     letter-spacing: 0.16rem;
   }
@@ -661,6 +659,11 @@ img {
 
   .advantages-section .advantage:first-child {
     padding-top: 32px;
+  }
+	
+  .advantages-section .advantage-title {
+    margin-bottom: 14px;
+    padding-left: 30px;
   }
 
   /* *************** Athleths section only *************** */
