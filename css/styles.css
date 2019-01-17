@@ -835,7 +835,7 @@ img {
 
 @media (min-width: 641px) and (max-width: 1575px) {
 
-/* *************** Actions section only *************** */
+/* *************** Actions section *************** */
 
   .actions-section .preview-title:before {
     width: 116px;
@@ -1242,7 +1242,7 @@ img {
 
 @media (min-width: 961px) and (max-width: 1575px) {
 
-  /* *************** Actions section only *************** */
+  /* *************** Actions section *************** */
 
   .actions-section .preview:nth-child(even) .container {
     padding-left: 24px;
@@ -1278,7 +1278,7 @@ img {
 
 @media (min-width: 961px) and (max-width: 1279px) {
 	  
-  /* *************** Actions section only *************** */
+  /* *************** Actions section *************** */
   
   .actions-section .preview .container {
     padding-top: 9.3vw;
@@ -1317,7 +1317,7 @@ img {
 
 @media (min-width: 1280px) and (max-width: 1575px) {
   
-  /* *************** Actions section only *************** */
+  /* *************** Actions section *************** */
   
   .actions-section .preview .container {
     padding-top: 10vw;
@@ -1335,7 +1335,7 @@ img {
 
 @media (min-width: 1576px) {
 
-  /* *************** Actions section only *************** */
+  /* *************** Actions section *************** */
 
   .actions-section .preview .container {
     padding-top: 12.9vw;
